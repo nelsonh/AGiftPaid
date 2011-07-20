@@ -44,6 +44,7 @@
 -(void)refreshView;
 -(void)reset;
 -(void)deSelectLastIcon;
+-(void)destroy;
 
 @end
 

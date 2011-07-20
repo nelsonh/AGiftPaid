@@ -42,6 +42,7 @@
 -(void)selectItemWithNumber:(NSString*)imageNumber;
 -(void)refreshItemIndex;
 -(void)refreshView;
+-(void)destroy;
 @end
 
 @protocol GiftBoxGalleryScrollViewDelegate<NSObject>

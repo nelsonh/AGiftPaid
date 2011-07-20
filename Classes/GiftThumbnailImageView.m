@@ -26,9 +26,9 @@
 	if(self)
 	{
 		//create check icon
-		UIImageView *icon=[[UIImageView alloc] initWithFrame:frame];
+		UIImageView *icon=[[[UIImageView alloc] initWithFrame:frame] autorelease];
 		self.checkIcon=icon;
-		[icon release];
+		//[icon release];
 		
 		[checkIcon setImage:[UIImage imageNamed:@"Nike.png"]];
 		
@@ -36,7 +36,7 @@
 		CGSize size=CGSizeMake(frame.size.width/2, frame.size.height/2);
 		CGPoint pos=CGPointMake(size.width-(size.width/2), size.height-(size.height/2));
 		CGRect indicatorFrame=CGRectMake(pos.x, pos.y, size.width, size.height);
-		self.loadingActivityView=[[UIActivityIndicatorView alloc] initWithFrame:indicatorFrame];
+		self.loadingActivityView=[[[UIActivityIndicatorView alloc] initWithFrame:indicatorFrame] autorelease];
 		[loadingActivityView setActivityIndicatorViewStyle:UIActivityIndicatorViewStyleGray];
 		
 
@@ -138,9 +138,13 @@
 
 - (void)dealloc {
 	
-	[owner release];
-	[loadingActivityView release];
-	[checkIcon release];
+	self.owner=nil;
+	//[owner release];
+	//[loadingActivityView release];
+	self.loadingActivityView=nil;
+	//[checkIcon release];
+	self.checkIcon=nil;
+	self.number=nil;
 	
     [super dealloc];
 }

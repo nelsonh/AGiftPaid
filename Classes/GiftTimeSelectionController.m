@@ -33,7 +33,7 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
 	
-	self.naviTitleView=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"iTime.png"]];
+	self.naviTitleView=[[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"iTime.png"]] autorelease];
 	[self.navigationItem setTitleView:self.naviTitleView];
 	
 	
@@ -43,7 +43,7 @@
 	[openDatePicker setDate:[NSDate date]];
 	
 	//custom navi right button
-	UIImageView *nextButton=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"GiftBla.png"]];
+	UIImageView *nextButton=[[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"GiftBla.png"]] autorelease];
 	[nextButton setUserInteractionEnabled:YES];
 	UITapGestureRecognizer *tapGesture=[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(nextView)];
 	[tapGesture setNumberOfTapsRequired:1];
@@ -111,7 +111,7 @@
 	
 	if([openTimeSwitch isOn])
 	{
-		NSDateFormatter *dateFormatter=[[NSDateFormatter alloc] init];
+		NSDateFormatter *dateFormatter=[[[NSDateFormatter alloc] init] autorelease];
 		[dateFormatter setDateFormat:@"yyyy/MM/dd/HH/mm/ss"];
 		[dateFormatter setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"GMT"]];
 		NSString *openTime=[dateFormatter stringFromDate:[openDatePicker date]];

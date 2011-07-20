@@ -41,5 +41,6 @@
 -(void)assignMusicFileName:(NSString*)fileName;
 -(void)didSelected;
 -(void)deSelected;
+-(void)destroy;
 
 @end

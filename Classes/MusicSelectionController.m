@@ -57,12 +57,12 @@
 	NSArray *domainPaths=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
 	NSString *docPath=[domainPaths objectAtIndex:0];
 	
-	self.naviTitleView=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"iMusic.png"]];
+	self.naviTitleView=[[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"iMusic.png"]] autorelease];
 	[self.navigationItem setTitleView:self.naviTitleView];
 	
 	[self setTitle:@"Music"];
 	
-	scrollviewSouceData=[[NSMutableArray alloc] init];
+	self.scrollviewSouceData=[[[NSMutableArray alloc] init] autorelease];
 	
 
 	[musicSlider setThumbImage:[UIImage imageNamed:@"Music.png"] forState:UIControlStateNormal];
@@ -73,7 +73,7 @@
 	//self.musicPlayer=[[AVAudioPlayer alloc] init];
 	
 	//add a record sound image view 
-	self.recordImageView=[[RecordImageView alloc] initWithFrame:recordSoundReferenceView.frame];
+	self.recordImageView=[[[RecordImageView alloc] initWithFrame:recordSoundReferenceView.frame] autorelease];
 	[recordImageView setOwner:musicGalleryScrollView];
 	[recordImageView setMainController:self];
 	[self.view addSubview:recordImageView];
@@ -92,7 +92,7 @@
 	 */
 	
 	//custom navi right button
-	UIImageView *nextButton=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MessageBla.png"]];
+	UIImageView *nextButton=[[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MessageBla.png"]] autorelease];
 	[nextButton setUserInteractionEnabled:YES];
 	UITapGestureRecognizer *tapGesture=[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(nextView)];
 	[tapGesture setNumberOfTapsRequired:1];
@@ -815,11 +815,15 @@
 
 - (void)dealloc {
 	
+	[self.musicGalleryScrollView destroy];
+	
+	self.scrollviewSouceData=nil;
+	
 	[musicGalleryScrollView release];
 	[playPausedButton release];
 	[recordButton release];
 	[musicSlider release];
-	[scrollviewSouceData release];
+	//[scrollviewSouceData release];
 	[hintButton release];
 	[hintController release];
 	
@@ -835,7 +839,9 @@
 		[soundRecorder release];
 	
 	[recordSoundReferenceView release];
-	[recordImageView release];
+	//[recordImageView release];
+	[self.recordImageView destroy];
+	self.recordImageView=nil;
 	[deSelectAllButton release];
 	[customMusic64Encoding release];
 	[processingView release];

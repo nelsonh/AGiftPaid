@@ -43,7 +43,7 @@
 	
 	
 	
-	self.naviTitleView=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"iMessage.png"]];
+	self.naviTitleView=[[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"iMessage.png"]] autorelease];
 	[self.navigationItem setTitleView:self.naviTitleView];
 	
 	[self setTitle:@"Message"];
@@ -87,7 +87,7 @@
 	//[beforeMsgView setHidden:YES];
 	
 	//custom navi right button
-	UIImageView *nextButton=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"FriendBla.png"]];
+	UIImageView *nextButton=[[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"FriendBla.png"]] autorelease];
 	[nextButton setUserInteractionEnabled:YES];
 	UITapGestureRecognizer *tapGesture=[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(nextView)];
 	[tapGesture setNumberOfTapsRequired:1];

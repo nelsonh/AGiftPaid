@@ -42,5 +42,6 @@
 -(void)assignFriendLabelName:(NSString*)friendName;
 -(void)didSelected;
 -(void)deSelected;
+-(void)destroy;
 
 @end

@@ -43,6 +43,7 @@
 -(void)refreshItemIndex;
 -(void)refreshView;
 -(void)reset;
+-(void)destroy;
 
 @end
 

@@ -48,7 +48,7 @@
 - (void)viewDidLoad {
 	AGiftPaidAppDelegate *appDelegate=(AGiftPaidAppDelegate*)[[UIApplication sharedApplication] delegate];
 	
-	self.naviTitleView=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"iFriend.png"]];
+	self.naviTitleView=[[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"iFriend.png"]] autorelease];
 	[self.navigationItem setTitleView:self.naviTitleView];
 	
 	[self setTitle:@"Friend"];
@@ -97,6 +97,8 @@
 }
 
 - (void)viewDidUnload {
+	
+	
 	
 	self.friendGalleryScrollView=nil;
 	self.friendIDTextField=nil;
@@ -672,11 +674,15 @@
 
 - (void)dealloc {
 	
+	[self.friendGalleryScrollView destroy];
+
+	self.scrollViewSourceData=nil;
+
 	[friendGalleryScrollView release];
 	[areaCodeTextField release];
 	[friendIDTextField release];
 	[addFriendButton release];
-	[scrollViewSourceData release];
+	//[scrollViewSourceData release];
 	[historyInfo release];
 	[sendingGiftView release];
 	[naviTitleView release];

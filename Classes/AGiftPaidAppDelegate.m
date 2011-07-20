@@ -256,7 +256,8 @@ NSString *const VerifyCode=@"VerifyPassword";
 			[self saveRegisterInfo];
 			
 			//info vaild access agift
-			[self presentAGiftRootView];
+			//[self presentAGiftRootView];
+            [self importContactList];
 		}
 		else 
 		{
@@ -603,7 +604,10 @@ NSString *const VerifyCode=@"VerifyPassword";
         //NSString *trimmedPhoneNumber = [pNumber stringByTrimmingCharactersInSet:numbers];
         
         [phoneNumberList addObject:pNumber];
+		
     }
+	
+	CFRelease(addressBook);
     
     AGiftWebService *service=[[AGiftWebService alloc] initAGiftWebService];
     [service setDelegate:self];

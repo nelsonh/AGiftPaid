@@ -90,7 +90,8 @@
 	if(imageData!=nil)
 		[imageData release];
 	
-	[giftIconPresenter release];
+	self.giftIconPresenter=nil;
+	//[giftIconPresenter release];
 	
 	if(downloadConnection)
 	{

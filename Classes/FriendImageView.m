@@ -29,30 +29,30 @@
 		//[self.layer setMasksToBounds:YES];
 		
 		//create friend image preseter
-		friendImagePresenter=[[FriendImage alloc] initWithFrame:CGRectMake((self.frame.size.width-54)/2, 0, 54, 54)];
-		[friendImagePresenter setOwner:self];
+		self.friendImagePresenter=[[[FriendImage alloc] initWithFrame:CGRectMake((self.frame.size.width-54)/2, 0, 54, 54)] autorelease];
+		[self.friendImagePresenter setOwner:self];
 		
 		//create label
-		friendNameLabel=[[UILabel alloc] initWithFrame:CGRectMake(0, 54, frame.size.width, 10)];
+		self.friendNameLabel=[[[UILabel alloc] initWithFrame:CGRectMake(0, 54, frame.size.width, 10)] autorelease];
 		[friendNameLabel setFont:[UIFont systemFontOfSize:10]];
 		[friendNameLabel setTextAlignment:UITextAlignmentCenter];
 		[friendNameLabel setBackgroundColor:[UIColor clearColor]];
 		
 		//create front image
-		frontImage=[[FriendImageFront alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
+		self.frontImage=[[[FriendImageFront alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)] autorelease];
 		[frontImage setOwner:self];
 		
 		
-		[self addSubview:friendImagePresenter];
-		[self addSubview:friendNameLabel];
-		[self addSubview:frontImage];
+		[self addSubview:self.friendImagePresenter];
+		[self addSubview:self.friendNameLabel];
+		[self addSubview:self.frontImage];
     }
     return self;
 }
 
 -(void)assignFriendLabelName:(NSString*)friendName
 {
-	[friendNameLabel setText:friendName];
+	[self.friendNameLabel setText:friendName];
 }
 
 -(void)didSelected
@@ -72,7 +72,19 @@
 
 -(void)deSelected
 {
-	[frontImage deSelected];
+	[self.frontImage deSelected];
+}
+
+-(void)destroy
+{
+	for(UIView *childView in [self subviews])
+	{
+		[childView removeFromSuperview];
+	}
+	
+	self.friendImagePresenter=nil;
+	self.friendNameLabel=nil;
+	self.frontImage=nil;
 }
 
 /*
@@ -85,11 +97,16 @@
 
 - (void)dealloc {
 	
-	[owner release];
-	[friendImagePresenter release];
-	[frontImage release];
-	[friendNameLabel release];
-	[number release];
+	//[owner release];
+	self.owner=nil;
+	//[friendImagePresenter release];
+	//[frontImage release];
+	//[friendNameLabel release];
+	//[number release];
+	self.number=nil;
+	self.friendImagePresenter=nil;
+	self.frontImage=nil;
+	self.friendNameLabel=nil;
 	
     [super dealloc];
 }

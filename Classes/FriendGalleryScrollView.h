@@ -44,6 +44,7 @@
 -(void)refreshView;
 -(void)reset;
 -(void)addfriendPhoto:(FriendImageView*)friendIcon;
+-(void)destroy;
 
 @end
 

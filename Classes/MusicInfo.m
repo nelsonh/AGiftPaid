@@ -25,7 +25,7 @@
 {
 	if(self=[super init])
 	{
-		musicIconPresenter=[[MusicImageView alloc] initWithFrame:CGRectMake(0, 0, kImageSize, kImageSize)];
+		self.musicIconPresenter=[[[MusicImageView alloc] initWithFrame:CGRectMake(0, 0, kImageSize, kImageSize)] autorelease];
 		musicPrefix=@"Music";
 	}
 	
@@ -61,7 +61,7 @@
 		//music not existed download from server
 		isDownloadingMusic=YES;
 		
-		musicData=[[NSMutableData alloc] init];
+		self.musicData=[[NSMutableData alloc] init];
 		
 		[appDelegate startNetworkActivity];
 		
@@ -104,16 +104,21 @@
 
 -(void)dealloc
 {
-	[musicURL release];
-	[musicFileName release];
+	//[musicURL release];
+	//[musicFileName release];
+	self.musicURL=nil;
+	self.musicFileName=nil;
 	
 	if(musicData)
 	{
 		[musicData release];
 	}
 	
-	[musicIconPresenter release];
-	[musicPrefix release];
+	[self.musicIconPresenter destroy];
+	self.musicIconPresenter=nil;
+	//[musicIconPresenter release];
+	//[musicPrefix release];
+	self.musicPrefix=nil;
 	
 	[super dealloc];
 }

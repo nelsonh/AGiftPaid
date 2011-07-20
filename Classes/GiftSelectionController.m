@@ -44,7 +44,7 @@
 	
 	AGiftPaidAppDelegate *appDelegate=(AGiftPaidAppDelegate*)[[UIApplication sharedApplication] delegate];
 	
-	self.naviTitleView=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"iGift.png"]];
+	self.naviTitleView=[[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"iGift.png"]] autorelease];
 	[self.navigationItem setTitleView:self.naviTitleView];
 	
 	[self setTitle:@"Gift"];
@@ -52,7 +52,7 @@
 	self.currentCategory=0;
 	
 	//self.scrollviewSouceData=[[NSMutableDictionary alloc] init];
-	self.scrollviewSouceData=[[NSMutableArray alloc] init];
+	self.scrollviewSouceData=[[[NSMutableArray alloc] init] autorelease];
 	
 	categoryMenuPresentXPos=categoryMenu.frame.origin.x;
 	
@@ -70,7 +70,7 @@
 	[service release];
 	
 	//custom navi right button
-	UIImageView *nextButton=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"PhotoBla.png"]];
+	UIImageView *nextButton=[[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"PhotoBla.png"]] autorelease];
 	[nextButton setUserInteractionEnabled:YES];
 	UITapGestureRecognizer *tapGesture=[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(nextView)];
 	[tapGesture setNumberOfTapsRequired:1];
@@ -357,6 +357,7 @@
 	Viewer3DGiftController *viewerController=[[Viewer3DGiftController alloc] initWithNibName:@"Viewer3DGiftController" bundle:nil];
 	[viewerController setGiftNumber:number];
 	[appDelegate presentNewController:viewerController animated:YES];
+	[viewerController release];
 }
 
 #pragma mark GiftGalleryScrollView source delegate
@@ -433,11 +434,15 @@
 
 - (void)dealloc {
 	
+	[self.giftGalleryScrollView destroy];
+	
+	self.scrollviewSouceData=nil;
+	
 	[giftGalleryScrollView release];
 	[categoryMenu release];
 	[categorySelectedButton release];
 	[confirmButton release];
-	[scrollviewSouceData release];
+	//[scrollviewSouceData release];
 	[naviTitleView release];
 	[hintButton release];
 	[hintController release];

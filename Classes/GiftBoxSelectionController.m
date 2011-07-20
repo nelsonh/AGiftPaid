@@ -40,7 +40,7 @@
 	
 	AGiftPaidAppDelegate *appDelegate=(AGiftPaidAppDelegate*)[[UIApplication sharedApplication] delegate];
 	
-	self.naviTitleView=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"iBox.png"]];
+	self.naviTitleView=[[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"iBox.png"]] autorelease];
 	[self.navigationItem setTitleView:self.naviTitleView];
 	
 	[self setTitle:@"Box"];
@@ -56,7 +56,7 @@
 	
 
 	//custom navi right button
-	UIImageView *nextButton=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"TimeBla.png"]];
+	UIImageView *nextButton=[[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"TimeBla.png"]] autorelease];
 	[nextButton setUserInteractionEnabled:YES];
 	UITapGestureRecognizer *tapGesture=[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(nextView)];
 	[tapGesture setNumberOfTapsRequired:1];
@@ -220,7 +220,7 @@
 	Viewer3DBoxController *viewerController=[[Viewer3DBoxController alloc] initWithNibName:@"Viewer3DBoxController" bundle:nil];
 	[viewerController setBoxNumber:number];
 	[appDelegate presentNewController:viewerController animated:YES];
-	
+	[viewerController release];
 	
 }
 
@@ -257,9 +257,12 @@
 
 - (void)dealloc {
 	
+	[self.boxGalleryScrollView destroy];
+	
+	self.scrollviewSouceData=nil;
 	[boxGalleryScrollView release];
 	[naviTitleView release];
-	[scrollviewSouceData release];
+	//[scrollviewSouceData release];
 	[naviTitleView release];
 	[hintButton release];
 	[hintController release];

@@ -28,7 +28,7 @@
 -(void)initialize
 {
 	if(self.friendThumbnails==nil)
-		self.friendThumbnails=[[NSMutableArray alloc] init];
+		self.friendThumbnails=[[[NSMutableArray alloc] init] autorelease];
 	
 	//start position point
 	positionToSet.x=kSpace;
@@ -185,7 +185,8 @@
 		[tempImage removeFromSuperview];
 	}
 	
-	[friendThumbnails removeAllObjects];
+	[self.friendThumbnails removeAllObjects];
+	self.friendThumbnails=nil;
 	totalItem=0;
 	[self setContentSize:CGSizeMake(0,	0)];
 	
@@ -218,9 +219,20 @@
 	[self setupContentSize:[friendThumbnails count]];
 }
 
+-(void)destroy
+{
+	for(UIView *childView in [self subviews])
+	{
+		[childView removeFromSuperview];
+	}
+	
+	[self.friendThumbnails removeAllObjects];
+}
+
 - (void)dealloc {
 	
-	[friendThumbnails release];
+	//[friendThumbnails release];
+	self.friendThumbnails=nil;
 	
     [super dealloc];
 }

@@ -37,14 +37,14 @@
 	if(self)
 	{
 		//create check icon
-		self.checkIcon=[[UIImageView alloc] initWithFrame:frame];
+		self.checkIcon=[[[UIImageView alloc] initWithFrame:frame] autorelease];
 		[checkIcon setImage:[UIImage imageNamed:@"Nike.png"]];
 		
 		//create loading indicator
 		CGSize size=CGSizeMake(frame.size.width/2, frame.size.height/2);
 		CGPoint pos=CGPointMake(size.width-(size.width/2), size.height-(size.height/2));
 		CGRect indicatorFrame=CGRectMake(pos.x, pos.y, size.width, size.height);
-		self.loadingActivityView=[[UIActivityIndicatorView alloc] initWithFrame:indicatorFrame];
+		self.loadingActivityView=[[[UIActivityIndicatorView alloc] initWithFrame:indicatorFrame] autorelease];
 		[loadingActivityView setActivityIndicatorViewStyle:UIActivityIndicatorViewStyleGray];
 		[self addSubview:loadingActivityView];
 		
@@ -186,10 +186,15 @@
 
 - (void)dealloc {
 	
-	[owner release];
-	[thumbnailImageURL release];
-	[loadingActivityView release];
-	[checkIcon release];
+	self.owner=nil;
+	//[owner release];
+	//[thumbnailImageURL release];
+	//[loadingActivityView release];
+	self.thumbnailImageURL=nil;
+	self.loadingActivityView=nil;
+	
+	//[checkIcon release];
+	self.checkIcon=nil;
 	
 	if(downloadConnection)
 	{

@@ -28,7 +28,7 @@
 -(void)initialize
 {
 	if(self.musicThumbnails==nil)
-		self.musicThumbnails=[[NSMutableArray alloc] init];
+		self.musicThumbnails=[[[NSMutableArray alloc] init] autorelease];
 	
 	//start position point
 	positionToSet.x=kSpace;
@@ -183,6 +183,7 @@
 	}
 	
 	[musicThumbnails removeAllObjects];
+	self.musicThumbnails=nil;
 	totalItem=0;
 	[self setContentSize:CGSizeMake(0,	0)];
 	
@@ -195,11 +196,20 @@
 	self.lastSelectedIcon=nil;
 }
 
+-(void)destroy
+{
+	for(UIView *childView in [self subviews])
+	{
+		[childView removeFromSuperview];
+	}
+	
+	[self.musicThumbnails removeAllObjects];
+}
+
 - (void)dealloc {
 	
-	[musicThumbnails release];
-	[sourceDataDelegate release];
-	[methodDelegate release];
+	self.musicThumbnails=nil;
+	//[musicThumbnails release];
 	[lastSelectedIcon release];
 	
     [super dealloc];

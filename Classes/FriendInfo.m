@@ -25,7 +25,7 @@
 {
 	if(self=[super init])
 	{
-		friendIconPresenter=[[FriendImageView alloc] initWithFrame:CGRectMake(0, 0, kImageSize, kImageSize)];
+		self.friendIconPresenter=[[[FriendImageView alloc] initWithFrame:CGRectMake(0, 0, kImageSize, kImageSize)] autorelease];
 	}
 	
 	return self;
@@ -160,11 +160,20 @@
 
 -(void)dealloc
 {
-	[friendPhotoURL release];
-	[friendName release];
-	[friendIconPresenter release];
-	[friendPhotoData release];
-	[friendID release];
+	//[friendPhotoURL release];
+	//[friendName release];
+	self.friendPhotoURL=nil;
+	self.friendName=nil;
+	//[friendIconPresenter release];
+	[self.friendIconPresenter destroy];
+	self.friendIconPresenter=nil;
+	//[friendPhotoData release];
+	//[friendID release];
+	self.friendID=nil;
+	if(self.friendPhotoData)
+	{
+		self.friendPhotoData=nil;
+	}
 	
 	[super dealloc];
 }

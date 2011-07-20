@@ -58,7 +58,11 @@
 
 	AGiftPaidAppDelegate *appDelegate=(AGiftPaidAppDelegate*)[[UIApplication sharedApplication] delegate];
 	
-	self.giftInfoPackage=[[SendGiftInfo alloc] init];
+	if(self.giftInfoPackage)
+	{
+		self.giftInfoPackage=nil;
+	}
+	self.giftInfoPackage=[[[SendGiftInfo alloc] init] autorelease];
 	[giftInfoPackage setSenderID:appDelegate.userPhoneNumber];
 	
 	//pop all controller
@@ -94,6 +98,7 @@
 
 - (void)dealloc {
 	
+	self.giftInfoPackage=nil;
     [super dealloc];
 }
 

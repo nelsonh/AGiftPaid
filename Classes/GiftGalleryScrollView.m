@@ -36,7 +36,7 @@
 -(void)initialize
 {
 	if(self.giftThumbnails==nil)
-		self.giftThumbnails=[[NSMutableArray alloc] init];
+		self.giftThumbnails=[[[NSMutableArray alloc] init] autorelease];
 	
 	//start position point
 	positionToSet.x=kSpace;
@@ -191,16 +191,28 @@
 	}
 	
 	[giftThumbnails removeAllObjects];
+	self.giftThumbnails=nil;
 	totalItem=0;
 	[self setContentSize:CGSizeMake(0,	0)];
 	
 	[self initialize];
 }
 
+-(void)destroy
+{
+	for(UIView *childView in [self subviews])
+	{
+		[childView removeFromSuperview];
+	}
+	
+	[self.giftThumbnails removeAllObjects];
+}
+
 
 - (void)dealloc {
 	
-	[giftThumbnails release];
+	//[giftThumbnails release];
+	self.giftThumbnails=nil;
 	self.sourceDataDelegate=nil;
 	self.methodDelegate=nil;
 	

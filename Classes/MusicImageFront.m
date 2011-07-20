@@ -68,7 +68,8 @@
 
 - (void)dealloc {
 	
-	[owner release];
+	self.owner=nil;
+	//[owner release];
 	
     [super dealloc];
 }

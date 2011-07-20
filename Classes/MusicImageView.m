@@ -30,17 +30,17 @@
 		//[self.layer setMasksToBounds:YES];
 		
 		//create music image preseter
-		musicImagePresenter=[[MusicImage alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, 54)];
+		self.musicImagePresenter=[[[MusicImage alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, 54)] autorelease];
 		[musicImagePresenter setOwner:self];
 		
 		//create label
-		musicNameLabel=[[UILabel alloc] initWithFrame:CGRectMake(0, 54, frame.size.width, 10)];
+		self.musicNameLabel=[[[UILabel alloc] initWithFrame:CGRectMake(0, 54, frame.size.width, 10)] autorelease];
 		[musicNameLabel setFont:[UIFont systemFontOfSize:10]];
 		[musicNameLabel setTextAlignment:UITextAlignmentCenter];
 		[musicNameLabel setBackgroundColor:[UIColor clearColor]];
 		
 		//create front image
-		frontImage=[[MusicImageFront alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
+		self.frontImage=[[[MusicImageFront alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)] autorelease];
 		[frontImage setOwner:self];
 		
 		[self addSubview:musicImagePresenter];
@@ -75,6 +75,18 @@
 	[frontImage deSelected];
 }
 
+-(void)destroy
+{
+	for(UIView *childView in [self subviews])
+	{
+		[childView removeFromSuperview];
+	}
+	
+	self.musicImagePresenter=nil;
+	self.musicNameLabel=nil;
+	self.frontImage=nil;
+}
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
@@ -85,12 +97,17 @@
 
 - (void)dealloc {
 	
-	[owner release];
-	[musicImagePresenter release];
-	[frontImage release];
-	[number release];
-	[musicNameLabel release];
-	[number release];
+	self.owner=nil;
+	//[owner release];
+	//[musicImagePresenter release];
+	//[frontImage release];
+	//[number release];
+	self.number=nil;
+	//[musicNameLabel release];
+	self.musicImagePresenter=nil;
+	self.frontImage=nil;
+	self.musicNameLabel=nil;
+	self.number=nil;
 	
     [super dealloc];
 }
