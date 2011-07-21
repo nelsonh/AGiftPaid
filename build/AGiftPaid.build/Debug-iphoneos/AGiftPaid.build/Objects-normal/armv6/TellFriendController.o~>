@@ -1,0 +1,8 @@
+/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/TellFriendController.m:15: error: no declaration of property 'contactData' found in the interface
+/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/TellFriendController.m: In function '-[TellFriendController dealloc]':
+/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/TellFriendController.m:65: error: request for member 'contactData' in something not a structure or union
+/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/TellFriendController.m: At top level:
+/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/TellFriendController.m:71: warning: incomplete implementation of class 'TellFriendController'
+/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/TellFriendController.m:71: warning: method definition for '-tableView:cellForRowAtIndexPath:' not found
+/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/TellFriendController.m:71: warning: method definition for '-tableView:numberOfRowsInSection:' not found
+/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/TellFriendController.m:71: warning: class 'TellFriendController' does not fully implement the 'UITableViewDataSource' protocol
