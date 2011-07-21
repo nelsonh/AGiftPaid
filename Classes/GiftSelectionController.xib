@@ -13,7 +13,7 @@
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
 			<integer value="39"/>
-			<integer value="1"/>
+			<integer value="18"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -231,7 +231,7 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">P3.png</string>
+							<string key="NSResourceName">P4.png</string>
 						</object>
 					</object>
 					<object class="IBUIButton" id="687380781">
@@ -1135,6 +1135,13 @@
 					<string key="className">UIViewController</string>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBFrameworkSource</string>
+						<string key="minorKey">MediaPlayer.framework/Headers/MPMoviePlayerViewController.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">UIViewController</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBFrameworkSource</string>
 						<string key="minorKey">UIKit.framework/Headers/UINavigationController.h</string>
 					</object>
 				</object>
@@ -1188,7 +1195,7 @@
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<string>Brown_background.png</string>
 				<string>Category.png</string>
-				<string>P3.png</string>
+				<string>P4.png</string>
 				<string>Question.png</string>
 				<string>XX.png</string>
 				<string>hint.png</string>
@@ -1197,7 +1204,7 @@
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<string>{320, 411}</string>
 				<string>{236, 27}</string>
-				<string>{102, 6}</string>
+				<string>{120, 7}</string>
 				<string>{48, 48}</string>
 				<string>{49, 49}</string>
 				<string>{30, 30}</string>

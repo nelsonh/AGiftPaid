@@ -12,6 +12,8 @@
 #import "FriendImageView.h"
 #import "SendGiftSectionViewController.h"
 #import "NSData+Base64.h"
+#import "GiftBoxSelectionController.h"
+
 
 @implementation FriendController
 
@@ -31,6 +33,8 @@
 @synthesize sendSuccessAlert;
 @synthesize deleteFriendAlert;
 @synthesize updatingView;
+@synthesize invitedPhoneNumber;
+@synthesize shouldUpdateFriend;
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 /*
@@ -46,7 +50,10 @@
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
+	
 	AGiftPaidAppDelegate *appDelegate=(AGiftPaidAppDelegate*)[[UIApplication sharedApplication] delegate];
+	
+	self.shouldUpdateFriend=YES;
 	
 	self.naviTitleView=[[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"iFriend.png"]] autorelease];
 	[self.navigationItem setTitleView:self.naviTitleView];
@@ -75,6 +82,21 @@
 	[dismissKeyboardButton release];
 	[toolBarItems release];
 	[keyboardToolBar release];
+	
+	//custom navi right button
+	UIImageView *nextButton=[[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"BoxNavi.png"]] autorelease];
+	[nextButton setUserInteractionEnabled:YES];
+	UITapGestureRecognizer *tapGesture=[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(nextView)];
+	[tapGesture setNumberOfTapsRequired:1];
+	[nextButton addGestureRecognizer:tapGesture];
+	[tapGesture release];
+	
+	UIBarButtonItem *nextButtonItem=[[UIBarButtonItem alloc] initWithCustomView:nextButton];
+	
+	[self.navigationItem setRightBarButtonItem:nextButtonItem];
+	[nextButtonItem release];
+	
+	[appDelegate refreshTabbarTitle:@"Gift" index:1];
 	
 	[friendGalleryScrollView initialize];
 	
@@ -205,6 +227,21 @@
 	
 }
 
+-(IBAction)inviteFriend
+{
+	AGiftPaidAppDelegate *appDelegate=(AGiftPaidAppDelegate*)[[UIApplication sharedApplication] delegate];
+	
+	ABPeoplePickerNavigationController *peoplePicker=[[ABPeoplePickerNavigationController alloc] init];
+	[peoplePicker setPeoplePickerDelegate:self];
+	
+	[appDelegate.rootController presentModalViewController:peoplePicker animated:YES];
+	
+	[peoplePicker release];
+	
+	self.shouldUpdateFriend=NO;
+	
+}
+
 #pragma mark Method
 -(void)resignKeyboard
 {
@@ -276,6 +313,149 @@
 -(void)disableHint
 {
 	[hintController closeButtonPress];
+}
+
+-(void)nextView
+{
+	if(friendGalleryScrollView.lastSelectedIcon==nil)
+	{
+		NSString *msg=@"You have to pick one friend from list";
+		UIAlertView *pickOneAlert=[[UIAlertView alloc] initWithTitle:@"Pick one" message:msg delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+		[pickOneAlert show];
+		[pickOneAlert release];
+	}
+	else 
+	{
+		[self assignInfoToPackage];
+		
+		[self disableHint];
+		
+		[self resignKeyboard];
+		
+		GiftBoxSelectionController *boxController=[[GiftBoxSelectionController alloc] initWithNibName:@"GiftBoxSelectionController" bundle:nil];
+		[self.navigationController pushViewController:boxController animated:YES];
+		[boxController release];
+	}
+}
+
+-(void)inviteFriendMenu
+{
+	AGiftPaidAppDelegate *appDelegate=(AGiftPaidAppDelegate*)[[UIApplication sharedApplication] delegate];
+	
+	UIActionSheet *inviteSheet=[[UIActionSheet alloc] initWithTitle:@"Invite a friend" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Invite a friend via E-mail", @"Invite a friend via SMS", nil];
+	[inviteSheet showInView:appDelegate.rootController.view];
+}
+
+#pragma mark ABPeoplePickerNavigationControllerDelegate
+- (void)peoplePickerNavigationControllerDidCancel:(ABPeoplePickerNavigationController *)peoplePicker
+{
+	[peoplePicker dismissModalViewControllerAnimated:YES];
+	
+	self.shouldUpdateFriend=YES;
+}
+
+- (BOOL)peoplePickerNavigationController:(ABPeoplePickerNavigationController *)peoplePicker shouldContinueAfterSelectingPerson:(ABRecordRef)person
+{
+	NSString *pNumber;
+	ABMultiValueRef pNumberRef;
+	
+	pNumberRef=ABRecordCopyValue(person, kABPersonPhoneProperty);
+	pNumber=(NSString*)ABMultiValueCopyValueAtIndex(pNumberRef, 0);
+	
+	if(pNumber)
+	{
+		pNumber=[pNumber stringByReplacingOccurrencesOfString:@"-" withString:@""];
+		pNumber=[pNumber stringByReplacingOccurrencesOfString:@"(" withString:@""];
+		pNumber=[pNumber stringByReplacingOccurrencesOfString:@")" withString:@""];
+		pNumber=[pNumber stringByReplacingOccurrencesOfString:@" " withString:@""];
+		
+		if([pNumber hasPrefix:@"+"])
+		{
+			pNumber=[pNumber stringByReplacingOccurrencesOfString:@"+" withString:@""];
+			pNumber=[pNumber substringFromIndex:3];
+		}
+		
+		self.invitedPhoneNumber=pNumber;
+	}
+	
+	[self inviteFriendMenu];
+	
+	[peoplePicker dismissModalViewControllerAnimated:YES];
+	
+	return NO;
+}
+
+- (BOOL)peoplePickerNavigationController:(ABPeoplePickerNavigationController *)peoplePicker shouldContinueAfterSelectingPerson:(ABRecordRef)person property:(ABPropertyID)property identifier:(ABMultiValueIdentifier)identifier
+{
+	return NO;
+}
+
+
+#pragma mark UIActionSheetDelegate
+- (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex
+{
+	self.shouldUpdateFriend=YES;
+	
+	if(buttonIndex==0)
+	{
+		NSURL *url=[NSURL URLWithString:@"mailto:test@gmail.com"];
+		[[UIApplication sharedApplication] openURL:url];
+	}
+	else if(buttonIndex==1)
+	{
+		
+		if([MFMessageComposeViewController canSendText] && self.invitedPhoneNumber)
+		{
+			AGiftPaidAppDelegate *appDelegate=(AGiftPaidAppDelegate*)[[UIApplication sharedApplication] delegate];
+			
+			MFMessageComposeViewController *smsController=[[MFMessageComposeViewController alloc] init];
+			
+			smsController.body = @"msg test";
+			smsController.recipients = [NSArray arrayWithObjects:self.invitedPhoneNumber, nil];
+			smsController.messageComposeDelegate = self;
+			[appDelegate.rootController presentModalViewController:smsController animated:YES];
+			
+			[smsController release];
+		}
+		else 
+		{
+			UIAlertView *smsAlert=[[UIAlertView alloc] initWithTitle:@"Error" message:@"Unable to start SMS" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+			[smsAlert show];
+			[smsAlert release];
+		}
+		
+		
+
+	}
+}
+
+#pragma mark MFMessageComposeViewControllerDelegate
+- (void)messageComposeViewController:(MFMessageComposeViewController *)controller didFinishWithResult:(MessageComposeResult)result
+{
+	switch (result) {
+		case MessageComposeResultCancelled:
+			break;
+		case MessageComposeResultFailed:
+		{
+			UIAlertView *failAlert = [[UIAlertView alloc] initWithTitle:@"SMS faild" message:@"Sent SMS faild"
+														   delegate:nil	cancelButtonTitle:@"OK" otherButtonTitles:nil];
+			[failAlert show];
+			[failAlert release];
+			break;
+		}
+		case MessageComposeResultSent:
+		{	
+			UIAlertView *successAlert = [[UIAlertView alloc] initWithTitle:@"SMS success" message:@"SMS has been sent successful"
+														   delegate:nil	cancelButtonTitle:@"OK" otherButtonTitles:nil];
+			[successAlert show];
+			[successAlert release];
+			break;
+		}
+		default:
+			break;
+	}
+	
+	[controller dismissModalViewControllerAnimated:YES];
 }
 
 #pragma mark UITextFieldDelegate
@@ -599,6 +779,16 @@
 	 
 }
 
+-(void)updateScrollviewSubView
+{
+	//update scrollview's subview if it need to display otherwise clear it
+	for(FriendInfo *fi in self.scrollViewSourceData)
+	{
+		[fi shouldDisplay];
+		
+	}
+}
+
 #pragma mark CoreAnimationDelegate
 - (void)animationDidStop:(CAAnimation *)theAnimation finished:(BOOL)flag
 {
@@ -640,11 +830,23 @@
 
 }
 
+#pragma mark UIScrollViewDelegate
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+	[self updateScrollviewSubView];
+}
+
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+{
+	if(!decelerate)
+		[self updateScrollviewSubView];
+}
+
 -(void)viewDidAppear:(BOOL)animated
 {
 	AGiftPaidAppDelegate *appDelegate=(AGiftPaidAppDelegate*)[[UIApplication sharedApplication] delegate];
 	
-	if([scrollViewSourceData count]>0)
+	if([scrollViewSourceData count]>0 && self.shouldUpdateFriend)
 	{
 		updateCount=[scrollViewSourceData count];
 		updating=YES;
@@ -663,7 +865,7 @@
 		
 		for(int i=0; i<[self.scrollViewSourceData count]; i++)
 		{
-			FriendInfo *friendInfo=[scrollViewSourceData objectAtIndex:i];
+			FriendInfo *friendInfo=[self.scrollViewSourceData objectAtIndex:i];
 			
 			[friendInfo updateFriendInfo];
 		}
@@ -692,6 +894,7 @@
 	[hintController release];
 	[sendSuccessAlert release];
 	[deleteFriendAlert release];
+	self.invitedPhoneNumber=nil;
 	
     [super dealloc];
 }

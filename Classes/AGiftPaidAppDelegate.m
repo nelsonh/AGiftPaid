@@ -257,7 +257,7 @@ NSString *const VerifyCode=@"VerifyPassword";
 			
 			//info vaild access agift
 			//[self presentAGiftRootView];
-            [self importContactList];
+            [self doImportContactList];
 		}
 		else 
 		{
@@ -323,8 +323,10 @@ NSString *const VerifyCode=@"VerifyPassword";
         
         [self.dataManager addNewFriend:fInfo];
     }
-    
-    [self presentAGiftRootView];
+	
+	
+    if([self isNetworkVaild])
+		[self presentAGiftRootView];
 }
 
 #pragma mark UI alert view delegate

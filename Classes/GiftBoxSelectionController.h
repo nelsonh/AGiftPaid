@@ -18,7 +18,7 @@
 	UIImageView *naviTitleView;
 	UIButton *hintButton;
 	GiftBoxSelectionHintController *hintController;
-	
+	AGiftWebService *tempService;
 	NSArray *scrollviewSouceData;
 	
 	BOOL shouldReload;
@@ -30,6 +30,7 @@
 @property (nonatomic, retain) UIImageView *naviTitleView;
 @property (nonatomic, retain) NSArray *scrollviewSouceData;
 @property (nonatomic, assign) BOOL shouldReload;
+@property (nonatomic, assign) AGiftWebService *tempService;
 
 -(IBAction)confirmButtonPressed:(id)sender;
 -(IBAction)hintButtonPress;

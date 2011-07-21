@@ -46,6 +46,7 @@
 		[self addSubview:self.friendImagePresenter];
 		[self addSubview:self.friendNameLabel];
 		[self addSubview:self.frontImage];
+		
     }
     return self;
 }

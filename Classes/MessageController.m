@@ -10,6 +10,7 @@
 #import "AGiftPaidAppDelegate.h"
 #import "FriendController.h"
 #import "SendGiftSectionViewController.h"
+#import "SendGift.h"
 
 @implementation MessageController
 
@@ -87,7 +88,7 @@
 	//[beforeMsgView setHidden:YES];
 	
 	//custom navi right button
-	UIImageView *nextButton=[[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"FriendBla.png"]] autorelease];
+	UIImageView *nextButton=[[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"SendNavi.png"]] autorelease];
 	[nextButton setUserInteractionEnabled:YES];
 	UITapGestureRecognizer *tapGesture=[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(nextView)];
 	[tapGesture setNumberOfTapsRequired:1];
@@ -278,15 +279,21 @@
 
 -(void)nextView
 {
+	
 	[self assignInfoToPackage];
 	
 	[self disableHint];
 	
 	[self resignKeyBoard];
-	
+	/*
 	FriendController *friendController=[[FriendController alloc] initWithNibName:@"FriendController" bundle:nil];
 	[self.navigationController pushViewController:friendController animated:YES];
 	[friendController release];
+	 */
+	
+	SendGift *sendGiftController=[[SendGift alloc] initWithNibName:@"SendGift" bundle:nil];
+	[self.navigationController pushViewController:sendGiftController animated:YES];
+	[sendGiftController release];
 }
 
 -(void)resignKeyBoard

@@ -44,7 +44,7 @@
 	[updateView.layer setMasksToBounds:YES];
 	
 	
-	CGRect gestureViewRect=CGRectMake(0, 33, updateView.frame.size.width, updateView.frame.size.height);
+	CGRect gestureViewRect=CGRectMake(0, 0, updateView.frame.size.width, updateView.frame.size.height);
 	UIView *aView=[[UIView alloc] initWithFrame:gestureViewRect];
 	[aView setBackgroundColor:[UIColor clearColor]];
 	self.gestureView=aView;

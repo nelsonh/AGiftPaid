@@ -22,6 +22,7 @@
 @synthesize hintButton;
 @synthesize hintController;
 @synthesize shouldReload;
+@synthesize tempService;
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 /*
@@ -52,6 +53,7 @@
 	[service setDelegate:self]; 
 	[appDelegate.mainOpQueue addOperation:service];
 	[service ReceiveGiftBoxPickerList];
+	tempService=service;
 	[service release];
 	
 
@@ -67,10 +69,6 @@
 	
 	[self.navigationItem setRightBarButtonItem:nextButtonItem];
 	[nextButtonItem release];
-	
-
-	
-	[appDelegate refreshTabbarTitle:@"Gift" index:1];
 	
 	
 	
@@ -100,6 +98,11 @@
 	self.naviTitleView=nil;
 	self.hintButton=nil;
 	self.hintController=nil;
+	
+	if(tempService)
+	{
+		tempService.delegate=nil;
+	}
 	
     [super viewDidUnload];
     // Release any retained subviews of the main view.
@@ -263,7 +266,6 @@
 	[boxGalleryScrollView release];
 	[naviTitleView release];
 	//[scrollviewSouceData release];
-	[naviTitleView release];
 	[hintButton release];
 	[hintController release];
 	

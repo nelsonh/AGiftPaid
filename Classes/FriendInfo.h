@@ -43,5 +43,8 @@
 -(void)assignFriendPhotoData:(NSData*)photoData;
 -(void)downloadFriendPhoto;
 -(void)updateFriendInfo;
+-(void)shouldDisplay;
+-(void)showPhoto;
+-(void)hidePhoto;
 
 @end

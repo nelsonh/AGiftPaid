@@ -12,10 +12,12 @@
 #import "GiftHistoryInfo.h"
 #import <QuartzCore/QuartzCore.h>
 #import "FriendHintController.h"
+#import <AddressBookUI/AddressBookUI.h>
+#import <MessageUI/MessageUI.h>
 
 #define AreaCodeLimitation 3
 
-@interface FriendController : UIViewController <UITextFieldDelegate ,UIAlertViewDelegate, AGiftWebServiceDelegate ,FriendGalleryScrollViewSourceDataDelegate, FriendGalleryScrollViewDelegate>{
+@interface FriendController : UIViewController <UITextFieldDelegate ,UIAlertViewDelegate, AGiftWebServiceDelegate ,FriendGalleryScrollViewSourceDataDelegate, FriendGalleryScrollViewDelegate, UIScrollViewDelegate, UIActionSheetDelegate, ABPeoplePickerNavigationControllerDelegate, MFMessageComposeViewControllerDelegate>{
 	
 	FriendGalleryScrollView *friendGalleryScrollView;
 	UITextField *areaCodeTextField;
@@ -31,6 +33,7 @@
 	UIAlertView *sendSuccessAlert;
 	UIAlertView *deleteFriendAlert;
 	UIActionSheet *updatingView;
+	NSString *invitedPhoneNumber;
 	
 	NSMutableArray *scrollViewSourceData;
 	
@@ -39,6 +42,7 @@
 	
 	int updateCount;
 	BOOL updating;
+	BOOL shouldUpdateFriend;
 
 }
 
@@ -58,6 +62,8 @@
 @property (nonatomic, retain) UIAlertView *sendSuccessAlert;
 @property (nonatomic, retain) UIAlertView *deleteFriendAlert;
 @property (nonatomic, retain) UIActionSheet *updatingView;
+@property (nonatomic, retain) NSString *invitedPhoneNumber;
+@property (nonatomic, assign) BOOL shouldUpdateFriend;
 
 
 
@@ -66,6 +72,7 @@
 -(IBAction)deleteFriendButtonPressed:(id)sender;
 -(IBAction)sendGiftButtonPressed:(id)sender;
 -(IBAction)hintButtonPress;
+-(IBAction)inviteFriend;
 
 -(void)deleteFriend;
 -(void)doDeleteFriend;
@@ -73,5 +80,8 @@
 -(void)assignInfoToPackage;
 -(void)sendGiftOut;
 -(void)disableHint;
+-(void)updateScrollviewSubView;
+-(void)nextView;
+-(void)inviteFriendMenu;
 
 @end

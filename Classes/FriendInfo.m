@@ -72,8 +72,8 @@
 		[appDelegate.dataManager addNewFriend:self];
 		
 		//assign photo
-		[friendIconPresenter.friendImagePresenter setImage:[UIImage imageWithData:friendPhotoData]];
-		
+		//[friendIconPresenter.friendImagePresenter setImage:[UIImage imageWithData:friendPhotoData]];
+		[self shouldDisplay];
 	}
 
 }
@@ -105,7 +105,8 @@
 	
 	
 	//assign photo
-	[friendIconPresenter.friendImagePresenter setImage:[UIImage imageWithData:friendPhotoData]];
+	//[friendIconPresenter.friendImagePresenter setImage:[UIImage imageWithData:friendPhotoData]];
+	[self shouldDisplay];
 	
 	if(friendIconPresenter)
 	{
@@ -115,6 +116,36 @@
 }
 
 #pragma mark methods
+-(void)shouldDisplay
+{
+	UIScrollView *scrollView=(UIScrollView*)self.friendIconPresenter.superview;
+	
+	if(scrollView)
+	{
+		if(CGRectIntersectsRect(scrollView.bounds, self.friendIconPresenter.frame))
+		{
+			
+			[self showPhoto];
+		}
+		else 
+		{
+			
+			[self hidePhoto];
+		}
+
+	}
+}
+
+-(void)showPhoto
+{
+	[friendIconPresenter.friendImagePresenter setImage:[UIImage imageWithData:self.friendPhotoData]];		
+}
+
+-(void)hidePhoto
+{
+	[friendIconPresenter.friendImagePresenter setImage:nil];
+}
+
 -(void)updateFriendInfo
 {
 	AGiftPaidAppDelegate *appDelegate=(AGiftPaidAppDelegate*)[[UIApplication sharedApplication] delegate];
@@ -151,8 +182,17 @@
 	else 
 	{
 		//receiver change phone number
-		[friendIconPresenter.friendImagePresenter setImage:[UIImage imageNamed:@"AUser2.png"]];
-		[friendIconPresenter.owner reset];
+		self.friendPhotoURL=nil;
+		
+		[self downloadFriendPhoto];
+		
+		self.friendName=[NSString stringWithString:@"Lost"];
+		
+		self.friendID=[NSString stringWithString:@"Lost"];
+		
+		//receiver change phone number
+		//[friendIconPresenter.friendImagePresenter setImage:[UIImage imageNamed:@"AUser2.png"]];
+		//[friendIconPresenter.owner reset];
 	}
 
 	

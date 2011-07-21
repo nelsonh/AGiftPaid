@@ -65,6 +65,7 @@
 		[doubleTapGesture setNumberOfTapsRequired:2];
 		[self addGestureRecognizer:doubleTapGesture];
 		[doubleTapGesture release];
+		
 	}
 	
 	return self;
@@ -83,7 +84,7 @@
 		
 		[loadingActivityView startAnimating];
 		
-		self.imageData=[[NSMutableData alloc] init];
+		self.imageData=[[[NSMutableData alloc] init] autorelease];
 		
 		NSURL *url=[NSURL URLWithString:iconURL];
 		NSURLRequest *request=[NSURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringCacheData timeoutInterval:30];
@@ -193,17 +194,23 @@
 	self.thumbnailImageURL=nil;
 	self.loadingActivityView=nil;
 	
+	
+	if(imageData!=nil)
+		self.imageData=nil;
+	
+	
 	//[checkIcon release];
 	self.checkIcon=nil;
 	
+	/*
 	if(downloadConnection)
 	{
-		[downloadConnection cancel];
+		//[downloadConnection cancel];
 		self.downloadConnection=nil;
 	}
+	 */
 	
-	if(imageData!=nil)
-		[imageData release];
+
 	
     [super dealloc];
 }

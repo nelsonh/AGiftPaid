@@ -7,7 +7,7 @@
 //
 
 #import "SendGiftSectionViewController.h"
-#import "GiftBoxSelectionController.h"
+#import "FriendController.h"
 #import "AGiftPaidAppDelegate.h"
 
 
@@ -40,7 +40,7 @@
 	
 	[giftInfoPackage setSenderID:appDelegate.userPhoneNumber];
 	
-	GiftBoxSelectionController *rootViewController=[[GiftBoxSelectionController alloc] initWithNibName:@"GiftBoxSelectionController" bundle:nil];
+	FriendController *rootViewController=[[FriendController alloc] initWithNibName:@"FriendController" bundle:nil];
 	NSArray *viewControllerArray=[[NSArray alloc] initWithObjects:rootViewController, nil];
 	
 	[self setViewControllers:viewControllerArray];
