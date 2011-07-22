@@ -189,6 +189,7 @@
 	self.friendThumbnails=nil;
 	totalItem=0;
 	[self setContentSize:CGSizeMake(0,	0)];
+	self.lastSelectedIcon=nil;
 	
 	[self initialize];
 }

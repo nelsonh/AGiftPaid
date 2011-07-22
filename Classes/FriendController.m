@@ -879,6 +879,8 @@
 	
 	if([scrollViewSourceData count]>0 && self.shouldUpdateFriend)
 	{
+		[self reset];
+		
 		updateCount=[scrollViewSourceData count];
 		updating=YES;
 		
@@ -903,7 +905,19 @@
 	}
 }
 
-#pragma mark  touch
+#pragma mark  method
+-(void)reset
+{
+	AGiftPaidAppDelegate *appDelegate=(AGiftPaidAppDelegate*)[[UIApplication sharedApplication] delegate];
+	
+	if(self.scrollViewSourceData)
+	{
+		self.scrollViewSourceData=nil;
+		self.scrollViewSourceData=[appDelegate.dataManager retrieveFriendList];
+		
+		[self.friendGalleryScrollView reset];
+	}
+}
 
 - (void)dealloc {
 	

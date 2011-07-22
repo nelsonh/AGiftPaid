@@ -14,6 +14,7 @@
 #import "UserPhotoSettingViewController.h"
 #import "SendGiftSectionViewController.h"
 #import "FriendInfo.h"
+#import "FriendController.h"
 
 
 
@@ -919,8 +920,19 @@ NSString *const VerifyCode=@"VerifyPassword";
 	
 	[[UIApplication sharedApplication] setApplicationIconBadgeNumber:0];
 	
-	//[self presentAGiftRootViewMultiTask];
 	[self retrieveAuthorizeKey];
+	/*
+	SendGiftSectionViewController *controller=(SendGiftSectionViewController*)[rootController.viewControllers objectAtIndex:1];
+	FriendController *Fcontroller=(FriendController*)[controller topViewController];
+	
+	if([Fcontroller isKindOfClass:[FriendController class]])
+	{
+		[Fcontroller reset];
+	}
+	*/
+	
+	//[self presentAGiftRootViewMultiTask];
+	
 	
 }
 

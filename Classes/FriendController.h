@@ -85,5 +85,6 @@
 -(void)updateScrollviewSubView;
 -(void)nextView;
 -(void)inviteFriendMenu;
+-(void)reset;
 
 @end
