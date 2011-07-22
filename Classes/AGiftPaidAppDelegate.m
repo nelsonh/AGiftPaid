@@ -326,7 +326,9 @@ NSString *const VerifyCode=@"VerifyPassword";
 	
 	
     if([self isNetworkVaild])
+	{
 		[self presentAGiftRootView];
+	}
 }
 
 #pragma mark UI alert view delegate
@@ -799,7 +801,7 @@ NSString *const VerifyCode=@"VerifyPassword";
 {
 	NSString *msg=[NSString stringWithString:@"Unable to connect to internet. Please check your internet connection"];
 	
-	UIAlertView *networkFailAlert=[[UIAlertView alloc] initWithTitle:@"Internet fail" message:msg delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+	UIAlertView *networkFailAlert=[[UIAlertView alloc] initWithTitle:@"Internet fail" message:msg delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
 	[networkFailAlert show];
 	[networkFailAlert release];
 	

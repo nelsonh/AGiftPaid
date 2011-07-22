@@ -34,6 +34,7 @@
 	UIAlertView *deleteFriendAlert;
 	UIActionSheet *updatingView;
 	NSString *invitedPhoneNumber;
+    NSString *invitedName;
 	
 	NSMutableArray *scrollViewSourceData;
 	
@@ -63,6 +64,7 @@
 @property (nonatomic, retain) UIAlertView *deleteFriendAlert;
 @property (nonatomic, retain) UIActionSheet *updatingView;
 @property (nonatomic, retain) NSString *invitedPhoneNumber;
+@property (nonatomic, retain) NSString *invitedName;
 @property (nonatomic, assign) BOOL shouldUpdateFriend;
 
 

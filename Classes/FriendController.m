@@ -35,6 +35,7 @@
 @synthesize updatingView;
 @synthesize invitedPhoneNumber;
 @synthesize shouldUpdateFriend;
+@synthesize invitedName;
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 /*
@@ -358,9 +359,35 @@
 {
 	NSString *pNumber;
 	ABMultiValueRef pNumberRef;
+    NSString *pName=@"";
+    NSString *firstName;
+    NSString *middleName;
+    NSString *lastName;
 	
 	pNumberRef=ABRecordCopyValue(person, kABPersonPhoneProperty);
 	pNumber=(NSString*)ABMultiValueCopyValueAtIndex(pNumberRef, 0);
+    
+    firstName=(NSString*)ABRecordCopyValue(person, kABPersonFirstNameProperty);
+    middleName=(NSString*)ABRecordCopyValue(person, kABPersonMiddleNameProperty);
+    lastName=(NSString*)ABRecordCopyValue(person, kABPersonLastNameProperty);
+    
+    if(firstName)
+    {
+        pName=[pName stringByAppendingString:[@"" stringByAppendingString:firstName]];
+    }
+    
+    if(middleName)
+    {
+        pName=[pName stringByAppendingString:[@"" stringByAppendingString:middleName]];    
+    }
+    
+    if(lastName)
+    {
+        pName=[pName stringByAppendingString:[@"" stringByAppendingString:lastName]];
+    }
+    
+    self.invitedName=pName;
+    
 	
 	if(pNumber)
 	{
@@ -409,8 +436,12 @@
 			AGiftPaidAppDelegate *appDelegate=(AGiftPaidAppDelegate*)[[UIApplication sharedApplication] delegate];
 			
 			MFMessageComposeViewController *smsController=[[MFMessageComposeViewController alloc] init];
+            
+            NSMutableString *msg=[[[NSMutableString alloc] init] autorelease];
+            [msg appendString:[NSString stringWithFormat:@"Hi %@, \n", self.invitedName]];
+            [msg appendString:[NSString stringWithFormat:@"Join me and go download the Gift-me app on your phone and start receiving virtual gifts from me and your friends.  Here’s the link to download: %@", @"http://itunes.apple.com/us/app/gift-me/id444696955?mt=8"]];
 			
-			smsController.body = @"msg test";
+			smsController.body = msg;
 			smsController.recipients = [NSArray arrayWithObjects:self.invitedPhoneNumber, nil];
 			smsController.messageComposeDelegate = self;
 			[appDelegate.rootController presentModalViewController:smsController animated:YES];
@@ -895,6 +926,7 @@
 	[sendSuccessAlert release];
 	[deleteFriendAlert release];
 	self.invitedPhoneNumber=nil;
+    self.invitedName=nil;
 	
     [super dealloc];
 }
