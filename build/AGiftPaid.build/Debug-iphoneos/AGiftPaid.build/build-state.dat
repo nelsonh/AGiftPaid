@@ -1,7 +1,7 @@
 TAGiftPaid
 v7
 r0
-t332936802.830536
+t333016824.644651
 cCheck dependencies
 cCpResource build/Debug-iphoneos/AGiftPaid.app/ResourceRules.plist /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
 cProcessInfoPlistFile /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app/Info.plist AGiftPaid-Info.plist
@@ -272,6 +272,7 @@ cCompileC build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/ar
 cCompileC build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/CXMLNode_PrivateExtensions.o /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/TouchXML/CXMLNode_PrivateExtensions.m normal armv6 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/CXMLNode_XPathExtensions.o /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/TouchXML/CXMLNode_XPathExtensions.m normal armv6 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/SendGift.o /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/SendGift.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/AGiftPaid normal armv6
 cCompileC build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/main.o /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/AGiftPaidAppDelegate.o /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/AGiftPaidAppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/AGiftWebService.o /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/AGiftWebService.m normal armv7 objective-c com.apple.compilers.gcc.4_2
@@ -380,7 +381,6 @@ cCompileC build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/ar
 cCompileC build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/CXMLNode_XPathExtensions.o /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/TouchXML/CXMLNode_XPathExtensions.m normal armv7 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/SendGift.o /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/SendGift.m normal armv7 objective-c com.apple.compilers.gcc.4_2
 cLd /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/AGiftPaid normal armv7
-cLd /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/AGiftPaid normal armv6
 cCreateUniversalBinary /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app/AGiftPaid normal "armv6 armv7"
 cGenerateDSYMFile /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app.dSYM /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app/AGiftPaid
 cProcessProductPackaging "/Users/Nelson/Library/MobileDevice/Provisioning Profiles/DCEBB220-C11C-4A40-97BE-18E780F2DC77.mobileprovision" /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app/embedded.mobileprovision
@@ -703,9 +703,9 @@ i<QuartzCore/QuartzCore.h>
 i<AddressBook/AddressBook.h>
 
 N/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/AGiftPaidAppDelegate.m
-c000000004E27F3A60000000000008E96
-t1311241126
-s36502
+c000000004E29356E0000000000009049
+t1311323502
+s36937
 i"AGiftPaidAppDelegate.h"
 i"RegisterViewController.h"
 i"SoapReachability.h"
@@ -714,6 +714,7 @@ i"NSData+Base64.h"
 i"UserPhotoSettingViewController.h"
 i"SendGiftSectionViewController.h"
 i"FriendInfo.h"
+i"FriendController.h"
 
 N/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/AGiftWebService.h
 c000000004E1E98820000000000001657
@@ -816,9 +817,9 @@ i"FriendInfo.h"
 i"GiftHistoryInfo.h"
 
 N/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/FriendController.h
-c000000004E27ED7F0000000000000BAA
-t1311239551
-s2986
+c000000004E28DA1D0000000000000C08
+t1311300125
+s3080
 i<UIKit/UIKit.h>
 i"FriendGalleryScrollView.h"
 i"AGiftWebService.h"
@@ -829,9 +830,9 @@ i<AddressBookUI/AddressBookUI.h>
 i<MessageUI/MessageUI.h>
 
 N/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/FriendController.m
-c000000004E27FEDE0000000000006E58
-t1311243998
-s28248
+c000000004E2936A70000000000007623
+t1311323815
+s30243
 i"FriendController.h"
 i"AGiftPaidAppDelegate.h"
 i"FriendInfo.h"
@@ -852,9 +853,9 @@ s1866
 i<UIKit/UIKit.h>
 
 N/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/FriendGalleryScrollView.m
-c000000004E268CD70000000000001501
-t1311149271
-s5377
+c000000004E28DA1D000000000000151D
+t1311300125
+s5405
 i"FriendGalleryScrollView.h"
 i"FriendImageView.h"
 
@@ -2736,8 +2737,8 @@ t1311219157
 s452
 
 N/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/AGiftPaid
-t1311244000
-s1031812
+t1311323817
+s1036688
 
 N/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/AGiftPaid.LinkFileList
 c000000004E27DF6C0000000000003951
@@ -2745,8 +2746,8 @@ t1311235948
 s14673
 
 N/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/AGiftPaidAppDelegate.o
-t1311241127
-s158084
+t1311323504
+s158240
 
 N/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/AGiftWebService.o
 t1311219137
@@ -2833,12 +2834,12 @@ t1311219138
 s74900
 
 N/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/FriendController.o
-t1311243999
-s155884
+t1311323816
+s160844
 
 N/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/FriendGalleryScrollView.o
-t1311219142
-s56052
+t1311300128
+s56116
 
 N/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/FriendHintController.o
 t1311219144
@@ -2945,8 +2946,8 @@ t1311219143
 s40540
 
 N/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/MessageController.o
-t1311239552
-s96708
+t1311300128
+s96732
 
 N/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/MessageDetailController.o
 t1311219143
@@ -3073,8 +3074,8 @@ t1311219142
 s28048
 
 N/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/SendGiftSectionViewController.o
-t1311239552
-s66252
+t1311300127
+s66276
 
 N/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/Soap+Prefix.o
 t1311219144
@@ -3177,8 +3178,8 @@ t1311219136
 s6536
 
 N/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/AGiftPaid
-t1311244000
-s993668
+t1311323817
+s994440
 
 N/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/AGiftPaid.LinkFileList
 c000000004E27DF6C0000000000003951
@@ -3186,8 +3187,8 @@ t1311235948
 s14673
 
 N/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/AGiftPaidAppDelegate.o
-t1311241127
-s155976
+t1311323504
+s156128
 
 N/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/AGiftWebService.o
 t1311219147
@@ -3274,12 +3275,12 @@ t1311219148
 s74248
 
 N/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/FriendController.o
-t1311243999
-s153988
+t1311323816
+s158792
 
 N/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/FriendGalleryScrollView.o
-t1311219151
-s55324
+t1311300130
+s55388
 
 N/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/FriendHintController.o
 t1311219153
@@ -3386,8 +3387,8 @@ t1311219152
 s40444
 
 N/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/MessageController.o
-t1311239553
-s95528
+t1311300129
+s95552
 
 N/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/MessageDetailController.o
 t1311219152
@@ -3514,8 +3515,8 @@ t1311219151
 s27576
 
 N/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/SendGiftSectionViewController.o
-t1311239552
-s66092
+t1311300129
+s66116
 
 N/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/Soap+Prefix.o
 t1311219154
@@ -3618,11 +3619,11 @@ t1311219146
 s6520
 
 N/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app
-t1311244002
+t1311324024
 s5712
 
 N/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app.dSYM
-t1311244000
+t1311323817
 s102
 
 N/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app/1-Birthday.mp3
@@ -3794,8 +3795,8 @@ t1311219120
 s3897
 
 N/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app/AGiftPaid
-t1311244000
-s2052960
+t1311323817
+s2057824
 
 N/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app/AGiftPaid.momd
 t1311219136
@@ -12472,15 +12473,16 @@ lSLF07#2@51"Analyze /Users/Nelson/Desktop/Proj/AGiftPaid/main.m328592008#3285920
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies332936798#332936798#0(0"0(0#1#0"8639752992#0"0#
+lSLF07#2@18"Check dependencies333016823#333016823#0(0"0(0#1#0"8675634944#0"0#
 
 CCodeSign /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app
-s332936801.355884
-e332936802.830454
+s333016823.490388
+e333016824.644611
 r1
 xCodeSign
 x/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app
-lSLF07#2@43"CodeSign build/Debug-iphoneos/AGiftPaid.app332936801#332936802#0(0"0(0#0#77"/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app8638714976#733"    cd /Users/Nelson/Desktop/Proj/AGift/AGiftPaid    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: Nelson Hung (C466W8TM8M)" --resource-rules=/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app/ResourceRules.plist --entitlements /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid.xcent /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app0#
+o/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app: replacing existing signature
+lSLF07#2@43"CodeSign build/Debug-iphoneos/AGiftPaid.app333016823#333016824#0(108"/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app: replacing existing signature0(0#0#77"/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app8662392448#733"    cd /Users/Nelson/Desktop/Proj/AGift/AGiftPaid    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: Nelson Hung (C466W8TM8M)" --resource-rules=/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app/ResourceRules.plist --entitlements /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid.xcent /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app0#
 
 CCodeSign /Users/Nelson/Desktop/Proj/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app
 s329100968.487206
@@ -12491,8 +12493,8 @@ x/Users/Nelson/Desktop/Proj/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app
 lSLF07#2@43"CodeSign build/Debug-iphoneos/AGiftPaid.app329100968#329100969#0(0"0(0#0#71"/Users/Nelson/Desktop/Proj/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app8624778080#709"    cd /Users/Nelson/Desktop/Proj/AGiftPaid    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: Nelson Hung (C466W8TM8M)" --resource-rules=/Users/Nelson/Desktop/Proj/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app/ResourceRules.plist --entitlements /Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid.xcent /Users/Nelson/Desktop/Proj/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app0#
 
 CCompileC build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/AGiftPaidAppDelegate.o /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/AGiftPaidAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s332933926.998447
-e332933927.719057
+s333016302.930975
+e333016304.320289
 r1
 xCompileC
 xbuild/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/AGiftPaidAppDelegate.o
@@ -12501,7 +12503,7 @@ xnormal
 xarmv6
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@81"Compile /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/AGiftPaidAppDelegate.m332933926#332933927#0(0"0(0#0#73"/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/AGiftPaidAppDelegate.m8614565376#2085"    cd /Users/Nelson/Desktop/Proj/AGift/AGiftPaid    setenv LANG en_US.US-ASCII    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-generated-files.hmap -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-own-target-headers.hmap -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-all-target-headers.hmap -iquote /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-project-headers.hmap -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/include -I/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/libxml2 -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources/armv6 -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources -include /var/folders/ka/ka1+sV0nEdGtKp9q-0ju4k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AGiftPaid_Prefix-bajlgkwbcdtussasrftoppvccjyx/AGiftPaid_Prefix.pch -c /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/AGiftPaidAppDelegate.m -o /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/AGiftPaidAppDelegate.o0#
+lSLF07#2@81"Compile /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/AGiftPaidAppDelegate.m333016302#333016304#0(0"0(0#0#73"/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/AGiftPaidAppDelegate.m8675494432#2085"    cd /Users/Nelson/Desktop/Proj/AGift/AGiftPaid    setenv LANG en_US.US-ASCII    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-generated-files.hmap -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-own-target-headers.hmap -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-all-target-headers.hmap -iquote /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-project-headers.hmap -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/include -I/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/libxml2 -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources/armv6 -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources -include /var/folders/ka/ka1+sV0nEdGtKp9q-0ju4k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AGiftPaid_Prefix-bajlgkwbcdtussasrftoppvccjyx/AGiftPaid_Prefix.pch -c /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/AGiftPaidAppDelegate.m -o /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/AGiftPaidAppDelegate.o0#
 
 CCompileC build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/AGiftPaidAppDelegate.o /Users/Nelson/Desktop/Proj/AGiftPaid/Classes/AGiftPaidAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
 s329100963.945539
@@ -13063,8 +13065,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@70"Compile /Users/Nelson/Desktop/Proj/AGiftPaid/Classes/CoreDataManager.m328679149#328679149#0(0"0(0#0#62"/Users/Nelson/Desktop/Proj/AGiftPaid/Classes/CoreDataManager.m8775466848#2003"    cd /Users/Nelson/Desktop/Proj/AGiftPaid    setenv LANG en_US.US-ASCII    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-generated-files.hmap -I/Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-own-target-headers.hmap -I/Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-all-target-headers.hmap -iquote /Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-project-headers.hmap -F/Users/Nelson/Desktop/Proj/AGiftPaid/build/Debug-iphoneos -F/Users/Nelson/Desktop/Proj/AGiftPaid -I/Users/Nelson/Desktop/Proj/AGiftPaid/build/Debug-iphoneos/include -I/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/libxml2 -I/Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources/armv6 -I/Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources -include /var/folders/ka/ka1+sV0nEdGtKp9q-0ju4k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AGiftPaid_Prefix-arcqbfzaokgdyedtutihnfydpmhf/AGiftPaid_Prefix.pch -c /Users/Nelson/Desktop/Proj/AGiftPaid/Classes/CoreDataManager.m -o /Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/CoreDataManager.o0#
 
 CCompileC build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/FriendController.o /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/FriendController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s332936798.809492
-e332936799.815785
+s333016615.873366
+e333016616.864772
 r1
 xCompileC
 xbuild/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/FriendController.o
@@ -13073,7 +13075,7 @@ xnormal
 xarmv6
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@77"Compile /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/FriendController.m332936798#332936799#0(0"0(0#0#69"/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/FriendController.m8643807264#2077"    cd /Users/Nelson/Desktop/Proj/AGift/AGiftPaid    setenv LANG en_US.US-ASCII    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-generated-files.hmap -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-own-target-headers.hmap -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-all-target-headers.hmap -iquote /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-project-headers.hmap -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/include -I/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/libxml2 -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources/armv6 -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources -include /var/folders/ka/ka1+sV0nEdGtKp9q-0ju4k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AGiftPaid_Prefix-bajlgkwbcdtussasrftoppvccjyx/AGiftPaid_Prefix.pch -c /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/FriendController.m -o /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/FriendController.o0#
+lSLF07#2@77"Compile /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/FriendController.m333016615#333016616#0(0"0(0#0#69"/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/FriendController.m8680026880#2077"    cd /Users/Nelson/Desktop/Proj/AGift/AGiftPaid    setenv LANG en_US.US-ASCII    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-generated-files.hmap -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-own-target-headers.hmap -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-all-target-headers.hmap -iquote /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-project-headers.hmap -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/include -I/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/libxml2 -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources/armv6 -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources -include /var/folders/ka/ka1+sV0nEdGtKp9q-0ju4k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AGiftPaid_Prefix-bajlgkwbcdtussasrftoppvccjyx/AGiftPaid_Prefix.pch -c /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/FriendController.m -o /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/FriendController.o0#
 
 CCompileC build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/FriendController.o /Users/Nelson/Desktop/Proj/AGiftPaid/Classes/FriendController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
 s328679152.734965
@@ -13089,8 +13091,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@71"Compile /Users/Nelson/Desktop/Proj/AGiftPaid/Classes/FriendController.m328679152#328679153#0(0"0(0#0#63"/Users/Nelson/Desktop/Proj/AGiftPaid/Classes/FriendController.m8782505664#2005"    cd /Users/Nelson/Desktop/Proj/AGiftPaid    setenv LANG en_US.US-ASCII    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-generated-files.hmap -I/Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-own-target-headers.hmap -I/Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-all-target-headers.hmap -iquote /Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-project-headers.hmap -F/Users/Nelson/Desktop/Proj/AGiftPaid/build/Debug-iphoneos -F/Users/Nelson/Desktop/Proj/AGiftPaid -I/Users/Nelson/Desktop/Proj/AGiftPaid/build/Debug-iphoneos/include -I/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/libxml2 -I/Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources/armv6 -I/Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources -include /var/folders/ka/ka1+sV0nEdGtKp9q-0ju4k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AGiftPaid_Prefix-arcqbfzaokgdyedtutihnfydpmhf/AGiftPaid_Prefix.pch -c /Users/Nelson/Desktop/Proj/AGiftPaid/Classes/FriendController.m -o /Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/FriendController.o0#
 
 CCompileC build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/FriendGalleryScrollView.o /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/FriendGalleryScrollView.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s332911942.313283
-e332911942.469943
+s332992928.407202
+e332992928.670757
 r1
 xCompileC
 xbuild/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/FriendGalleryScrollView.o
@@ -13099,7 +13101,7 @@ xnormal
 xarmv6
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@84"Compile /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/FriendGalleryScrollView.m332911942#332911942#0(0"0(0#0#76"/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/FriendGalleryScrollView.m8713360288#2091"    cd /Users/Nelson/Desktop/Proj/AGift/AGiftPaid    setenv LANG en_US.US-ASCII    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-generated-files.hmap -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-own-target-headers.hmap -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-all-target-headers.hmap -iquote /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-project-headers.hmap -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/include -I/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/libxml2 -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources/armv6 -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources -include /var/folders/ka/ka1+sV0nEdGtKp9q-0ju4k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AGiftPaid_Prefix-bajlgkwbcdtussasrftoppvccjyx/AGiftPaid_Prefix.pch -c /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/FriendGalleryScrollView.m -o /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/FriendGalleryScrollView.o0#
+lSLF07#2@84"Compile /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/FriendGalleryScrollView.m332992928#332992928#0(0"0(0#0#76"/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/FriendGalleryScrollView.m8653798560#2091"    cd /Users/Nelson/Desktop/Proj/AGift/AGiftPaid    setenv LANG en_US.US-ASCII    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-generated-files.hmap -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-own-target-headers.hmap -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-all-target-headers.hmap -iquote /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-project-headers.hmap -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/include -I/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/libxml2 -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources/armv6 -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources -include /var/folders/ka/ka1+sV0nEdGtKp9q-0ju4k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AGiftPaid_Prefix-bajlgkwbcdtussasrftoppvccjyx/AGiftPaid_Prefix.pch -c /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/FriendGalleryScrollView.m -o /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/FriendGalleryScrollView.o0#
 
 CCompileC build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/FriendGalleryScrollView.o /Users/Nelson/Desktop/Proj/AGiftPaid/Classes/FriendGalleryScrollView.m normal armv6 objective-c com.apple.compilers.gcc.4_2
 s328679153.420685
@@ -13791,8 +13793,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@66"Compile /Users/Nelson/Desktop/Proj/AGiftPaid/Classes/MessageCell.m328679155#328679155#0(0"0(0#0#58"/Users/Nelson/Desktop/Proj/AGiftPaid/Classes/MessageCell.m8775406112#1995"    cd /Users/Nelson/Desktop/Proj/AGiftPaid    setenv LANG en_US.US-ASCII    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-generated-files.hmap -I/Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-own-target-headers.hmap -I/Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-all-target-headers.hmap -iquote /Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-project-headers.hmap -F/Users/Nelson/Desktop/Proj/AGiftPaid/build/Debug-iphoneos -F/Users/Nelson/Desktop/Proj/AGiftPaid -I/Users/Nelson/Desktop/Proj/AGiftPaid/build/Debug-iphoneos/include -I/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/libxml2 -I/Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources/armv6 -I/Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources -include /var/folders/ka/ka1+sV0nEdGtKp9q-0ju4k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AGiftPaid_Prefix-arcqbfzaokgdyedtutihnfydpmhf/AGiftPaid_Prefix.pch -c /Users/Nelson/Desktop/Proj/AGiftPaid/Classes/MessageCell.m -o /Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/MessageCell.o0#
 
 CCompileC build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/MessageController.o /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/MessageController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s332932352.002109
-e332932352.489817
+s332992927.962216
+e332992928.406775
 r1
 xCompileC
 xbuild/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/MessageController.o
@@ -13801,7 +13803,7 @@ xnormal
 xarmv6
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@78"Compile /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/MessageController.m332932352#332932352#0(0"0(0#0#70"/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/MessageController.m8624354688#2079"    cd /Users/Nelson/Desktop/Proj/AGift/AGiftPaid    setenv LANG en_US.US-ASCII    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-generated-files.hmap -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-own-target-headers.hmap -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-all-target-headers.hmap -iquote /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-project-headers.hmap -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/include -I/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/libxml2 -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources/armv6 -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources -include /var/folders/ka/ka1+sV0nEdGtKp9q-0ju4k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AGiftPaid_Prefix-bajlgkwbcdtussasrftoppvccjyx/AGiftPaid_Prefix.pch -c /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/MessageController.m -o /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/MessageController.o0#
+lSLF07#2@78"Compile /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/MessageController.m332992927#332992928#0(0"0(0#0#70"/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/MessageController.m8668954752#2079"    cd /Users/Nelson/Desktop/Proj/AGift/AGiftPaid    setenv LANG en_US.US-ASCII    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-generated-files.hmap -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-own-target-headers.hmap -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-all-target-headers.hmap -iquote /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-project-headers.hmap -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/include -I/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/libxml2 -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources/armv6 -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources -include /var/folders/ka/ka1+sV0nEdGtKp9q-0ju4k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AGiftPaid_Prefix-bajlgkwbcdtussasrftoppvccjyx/AGiftPaid_Prefix.pch -c /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/MessageController.m -o /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/MessageController.o0#
 
 CCompileC build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/MessageController.o /Users/Nelson/Desktop/Proj/AGiftPaid/Classes/MessageController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
 s328679151.587393
@@ -14614,8 +14616,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@67"Compile /Users/Nelson/Desktop/Proj/AGiftPaid/Classes/SendGiftInfo.m328679153#328679153#0(0"0(0#0#59"/Users/Nelson/Desktop/Proj/AGiftPaid/Classes/SendGiftInfo.m8772541568#1997"    cd /Users/Nelson/Desktop/Proj/AGiftPaid    setenv LANG en_US.US-ASCII    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-generated-files.hmap -I/Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-own-target-headers.hmap -I/Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-all-target-headers.hmap -iquote /Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-project-headers.hmap -F/Users/Nelson/Desktop/Proj/AGiftPaid/build/Debug-iphoneos -F/Users/Nelson/Desktop/Proj/AGiftPaid -I/Users/Nelson/Desktop/Proj/AGiftPaid/build/Debug-iphoneos/include -I/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/libxml2 -I/Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources/armv6 -I/Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources -include /var/folders/ka/ka1+sV0nEdGtKp9q-0ju4k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AGiftPaid_Prefix-arcqbfzaokgdyedtutihnfydpmhf/AGiftPaid_Prefix.pch -c /Users/Nelson/Desktop/Proj/AGiftPaid/Classes/SendGiftInfo.m -o /Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/SendGiftInfo.o0#
 
 CCompileC build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/SendGiftSectionViewController.o /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/SendGiftSectionViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s332932351.994853
-e332932352.260025
+s332992927.722507
+e332992927.960559
 r1
 xCompileC
 xbuild/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/SendGiftSectionViewController.o
@@ -14624,7 +14626,7 @@ xnormal
 xarmv6
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@90"Compile /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/SendGiftSectionViewController.m332932351#332932352#0(0"0(0#0#82"/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/SendGiftSectionViewController.m8629120832#2103"    cd /Users/Nelson/Desktop/Proj/AGift/AGiftPaid    setenv LANG en_US.US-ASCII    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-generated-files.hmap -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-own-target-headers.hmap -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-all-target-headers.hmap -iquote /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-project-headers.hmap -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/include -I/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/libxml2 -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources/armv6 -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources -include /var/folders/ka/ka1+sV0nEdGtKp9q-0ju4k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AGiftPaid_Prefix-bajlgkwbcdtussasrftoppvccjyx/AGiftPaid_Prefix.pch -c /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/SendGiftSectionViewController.m -o /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/SendGiftSectionViewController.o0#
+lSLF07#2@90"Compile /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/SendGiftSectionViewController.m332992927#332992927#0(0"0(0#0#82"/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/SendGiftSectionViewController.m8672362688#2103"    cd /Users/Nelson/Desktop/Proj/AGift/AGiftPaid    setenv LANG en_US.US-ASCII    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-generated-files.hmap -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-own-target-headers.hmap -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-all-target-headers.hmap -iquote /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-project-headers.hmap -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/include -I/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/libxml2 -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources/armv6 -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources -include /var/folders/ka/ka1+sV0nEdGtKp9q-0ju4k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AGiftPaid_Prefix-bajlgkwbcdtussasrftoppvccjyx/AGiftPaid_Prefix.pch -c /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/SendGiftSectionViewController.m -o /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/SendGiftSectionViewController.o0#
 
 CCompileC build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/SendGiftSectionViewController.o /Users/Nelson/Desktop/Proj/AGiftPaid/Classes/SendGiftSectionViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
 s328679149.396821
@@ -15295,8 +15297,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@51"Compile /Users/Nelson/Desktop/Proj/AGiftPaid/main.m328679148#328679148#0(0"0(0#0#43"/Users/Nelson/Desktop/Proj/AGiftPaid/main.m8781749856#1973"    cd /Users/Nelson/Desktop/Proj/AGiftPaid    setenv LANG en_US.US-ASCII    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-generated-files.hmap -I/Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-own-target-headers.hmap -I/Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-all-target-headers.hmap -iquote /Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-project-headers.hmap -F/Users/Nelson/Desktop/Proj/AGiftPaid/build/Debug-iphoneos -F/Users/Nelson/Desktop/Proj/AGiftPaid -I/Users/Nelson/Desktop/Proj/AGiftPaid/build/Debug-iphoneos/include -I/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/libxml2 -I/Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources/armv6 -I/Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources -include /var/folders/ka/ka1+sV0nEdGtKp9q-0ju4k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AGiftPaid_Prefix-arcqbfzaokgdyedtutihnfydpmhf/AGiftPaid_Prefix.pch -c /Users/Nelson/Desktop/Proj/AGiftPaid/main.m -o /Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/main.o0#
 
 CCompileC build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/AGiftPaidAppDelegate.o /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/AGiftPaidAppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s332933927.119204
-e332933927.680105
+s333016303.394969
+e333016304.185320
 r1
 xCompileC
 xbuild/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/AGiftPaidAppDelegate.o
@@ -15305,7 +15307,7 @@ xnormal
 xarmv7
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@81"Compile /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/AGiftPaidAppDelegate.m332933927#332933927#0(0"0(0#0#73"/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/AGiftPaidAppDelegate.m8638713536#2085"    cd /Users/Nelson/Desktop/Proj/AGift/AGiftPaid    setenv LANG en_US.US-ASCII    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-generated-files.hmap -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-own-target-headers.hmap -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-all-target-headers.hmap -iquote /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-project-headers.hmap -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/include -I/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/libxml2 -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources/armv7 -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources -include /var/folders/ka/ka1+sV0nEdGtKp9q-0ju4k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AGiftPaid_Prefix-avwgmbdcvgmitihdipbtluodfypb/AGiftPaid_Prefix.pch -c /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/AGiftPaidAppDelegate.m -o /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/AGiftPaidAppDelegate.o0#
+lSLF07#2@81"Compile /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/AGiftPaidAppDelegate.m333016303#333016304#0(0"0(0#0#73"/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/AGiftPaidAppDelegate.m8645502272#2085"    cd /Users/Nelson/Desktop/Proj/AGift/AGiftPaid    setenv LANG en_US.US-ASCII    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-generated-files.hmap -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-own-target-headers.hmap -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-all-target-headers.hmap -iquote /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-project-headers.hmap -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/include -I/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/libxml2 -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources/armv7 -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources -include /var/folders/ka/ka1+sV0nEdGtKp9q-0ju4k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AGiftPaid_Prefix-avwgmbdcvgmitihdipbtluodfypb/AGiftPaid_Prefix.pch -c /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/AGiftPaidAppDelegate.m -o /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/AGiftPaidAppDelegate.o0#
 
 CCompileC build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/AGiftPaidAppDelegate.o /Users/Nelson/Desktop/Proj/AGiftPaid/Classes/AGiftPaidAppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
 s329100964.044735
@@ -15867,8 +15869,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@70"Compile /Users/Nelson/Desktop/Proj/AGiftPaid/Classes/CoreDataManager.m328679158#328679159#0(0"0(0#0#62"/Users/Nelson/Desktop/Proj/AGiftPaid/Classes/CoreDataManager.m8780756544#2003"    cd /Users/Nelson/Desktop/Proj/AGiftPaid    setenv LANG en_US.US-ASCII    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-generated-files.hmap -I/Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-own-target-headers.hmap -I/Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-all-target-headers.hmap -iquote /Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-project-headers.hmap -F/Users/Nelson/Desktop/Proj/AGiftPaid/build/Debug-iphoneos -F/Users/Nelson/Desktop/Proj/AGiftPaid -I/Users/Nelson/Desktop/Proj/AGiftPaid/build/Debug-iphoneos/include -I/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/libxml2 -I/Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources/armv7 -I/Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources -include /var/folders/ka/ka1+sV0nEdGtKp9q-0ju4k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AGiftPaid_Prefix-enwxaqhteoqcjfespjawqglrrigu/AGiftPaid_Prefix.pch -c /Users/Nelson/Desktop/Proj/AGiftPaid/Classes/CoreDataManager.m -o /Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/CoreDataManager.o0#
 
 CCompileC build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/FriendController.o /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/FriendController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s332936798.906907
-e332936799.648019
+s333016616.234941
+e333016616.836860
 r1
 xCompileC
 xbuild/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/FriendController.o
@@ -15877,7 +15879,7 @@ xnormal
 xarmv7
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@77"Compile /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/FriendController.m332936798#332936799#0(0"0(0#0#69"/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/FriendController.m8644201024#2077"    cd /Users/Nelson/Desktop/Proj/AGift/AGiftPaid    setenv LANG en_US.US-ASCII    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-generated-files.hmap -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-own-target-headers.hmap -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-all-target-headers.hmap -iquote /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-project-headers.hmap -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/include -I/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/libxml2 -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources/armv7 -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources -include /var/folders/ka/ka1+sV0nEdGtKp9q-0ju4k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AGiftPaid_Prefix-avwgmbdcvgmitihdipbtluodfypb/AGiftPaid_Prefix.pch -c /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/FriendController.m -o /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/FriendController.o0#
+lSLF07#2@77"Compile /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/FriendController.m333016616#333016616#0(0"0(0#0#69"/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/FriendController.m8675253408#2077"    cd /Users/Nelson/Desktop/Proj/AGift/AGiftPaid    setenv LANG en_US.US-ASCII    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-generated-files.hmap -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-own-target-headers.hmap -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-all-target-headers.hmap -iquote /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-project-headers.hmap -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/include -I/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/libxml2 -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources/armv7 -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources -include /var/folders/ka/ka1+sV0nEdGtKp9q-0ju4k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AGiftPaid_Prefix-avwgmbdcvgmitihdipbtluodfypb/AGiftPaid_Prefix.pch -c /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/FriendController.m -o /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/FriendController.o0#
 
 CCompileC build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/FriendController.o /Users/Nelson/Desktop/Proj/AGiftPaid/Classes/FriendController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
 s328679162.526623
@@ -15893,8 +15895,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@71"Compile /Users/Nelson/Desktop/Proj/AGiftPaid/Classes/FriendController.m328679162#328679163#0(0"0(0#0#63"/Users/Nelson/Desktop/Proj/AGiftPaid/Classes/FriendController.m8775471776#2005"    cd /Users/Nelson/Desktop/Proj/AGiftPaid    setenv LANG en_US.US-ASCII    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-generated-files.hmap -I/Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-own-target-headers.hmap -I/Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-all-target-headers.hmap -iquote /Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-project-headers.hmap -F/Users/Nelson/Desktop/Proj/AGiftPaid/build/Debug-iphoneos -F/Users/Nelson/Desktop/Proj/AGiftPaid -I/Users/Nelson/Desktop/Proj/AGiftPaid/build/Debug-iphoneos/include -I/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/libxml2 -I/Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources/armv7 -I/Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources -include /var/folders/ka/ka1+sV0nEdGtKp9q-0ju4k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AGiftPaid_Prefix-enwxaqhteoqcjfespjawqglrrigu/AGiftPaid_Prefix.pch -c /Users/Nelson/Desktop/Proj/AGiftPaid/Classes/FriendController.m -o /Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/FriendController.o0#
 
 CCompileC build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/FriendGalleryScrollView.o /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/FriendGalleryScrollView.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s332911951.617139
-e332911951.778105
+s332992929.877381
+e332992930.003076
 r1
 xCompileC
 xbuild/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/FriendGalleryScrollView.o
@@ -15903,7 +15905,7 @@ xnormal
 xarmv7
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@84"Compile /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/FriendGalleryScrollView.m332911951#332911951#0(0"0(0#0#76"/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/FriendGalleryScrollView.m8701678944#2091"    cd /Users/Nelson/Desktop/Proj/AGift/AGiftPaid    setenv LANG en_US.US-ASCII    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-generated-files.hmap -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-own-target-headers.hmap -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-all-target-headers.hmap -iquote /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-project-headers.hmap -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/include -I/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/libxml2 -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources/armv7 -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources -include /var/folders/ka/ka1+sV0nEdGtKp9q-0ju4k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AGiftPaid_Prefix-avwgmbdcvgmitihdipbtluodfypb/AGiftPaid_Prefix.pch -c /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/FriendGalleryScrollView.m -o /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/FriendGalleryScrollView.o0#
+lSLF07#2@84"Compile /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/FriendGalleryScrollView.m332992929#332992930#0(0"0(0#0#76"/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/FriendGalleryScrollView.m8669844480#2091"    cd /Users/Nelson/Desktop/Proj/AGift/AGiftPaid    setenv LANG en_US.US-ASCII    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-generated-files.hmap -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-own-target-headers.hmap -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-all-target-headers.hmap -iquote /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-project-headers.hmap -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/include -I/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/libxml2 -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources/armv7 -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources -include /var/folders/ka/ka1+sV0nEdGtKp9q-0ju4k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AGiftPaid_Prefix-avwgmbdcvgmitihdipbtluodfypb/AGiftPaid_Prefix.pch -c /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/FriendGalleryScrollView.m -o /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/FriendGalleryScrollView.o0#
 
 CCompileC build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/FriendGalleryScrollView.o /Users/Nelson/Desktop/Proj/AGiftPaid/Classes/FriendGalleryScrollView.m normal armv7 objective-c com.apple.compilers.gcc.4_2
 s328679163.211251
@@ -16595,8 +16597,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@66"Compile /Users/Nelson/Desktop/Proj/AGiftPaid/Classes/MessageCell.m328679164#328679165#0(0"0(0#0#58"/Users/Nelson/Desktop/Proj/AGiftPaid/Classes/MessageCell.m8766772640#1995"    cd /Users/Nelson/Desktop/Proj/AGiftPaid    setenv LANG en_US.US-ASCII    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-generated-files.hmap -I/Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-own-target-headers.hmap -I/Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-all-target-headers.hmap -iquote /Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-project-headers.hmap -F/Users/Nelson/Desktop/Proj/AGiftPaid/build/Debug-iphoneos -F/Users/Nelson/Desktop/Proj/AGiftPaid -I/Users/Nelson/Desktop/Proj/AGiftPaid/build/Debug-iphoneos/include -I/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/libxml2 -I/Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources/armv7 -I/Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources -include /var/folders/ka/ka1+sV0nEdGtKp9q-0ju4k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AGiftPaid_Prefix-enwxaqhteoqcjfespjawqglrrigu/AGiftPaid_Prefix.pch -c /Users/Nelson/Desktop/Proj/AGiftPaid/Classes/MessageCell.m -o /Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/MessageCell.o0#
 
 CCompileC build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/MessageController.o /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/MessageController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s332932352.777631
-e332932353.152472
+s332992929.520768
+e332992929.876945
 r1
 xCompileC
 xbuild/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/MessageController.o
@@ -16605,7 +16607,7 @@ xnormal
 xarmv7
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@78"Compile /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/MessageController.m332932352#332932353#0(0"0(0#0#70"/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/MessageController.m8636685856#2079"    cd /Users/Nelson/Desktop/Proj/AGift/AGiftPaid    setenv LANG en_US.US-ASCII    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-generated-files.hmap -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-own-target-headers.hmap -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-all-target-headers.hmap -iquote /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-project-headers.hmap -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/include -I/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/libxml2 -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources/armv7 -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources -include /var/folders/ka/ka1+sV0nEdGtKp9q-0ju4k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AGiftPaid_Prefix-avwgmbdcvgmitihdipbtluodfypb/AGiftPaid_Prefix.pch -c /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/MessageController.m -o /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/MessageController.o0#
+lSLF07#2@78"Compile /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/MessageController.m332992929#332992929#0(0"0(0#0#70"/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/MessageController.m8637006720#2079"    cd /Users/Nelson/Desktop/Proj/AGift/AGiftPaid    setenv LANG en_US.US-ASCII    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-generated-files.hmap -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-own-target-headers.hmap -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-all-target-headers.hmap -iquote /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-project-headers.hmap -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/include -I/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/libxml2 -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources/armv7 -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources -include /var/folders/ka/ka1+sV0nEdGtKp9q-0ju4k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AGiftPaid_Prefix-avwgmbdcvgmitihdipbtluodfypb/AGiftPaid_Prefix.pch -c /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/MessageController.m -o /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/MessageController.o0#
 
 CCompileC build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/MessageController.o /Users/Nelson/Desktop/Proj/AGiftPaid/Classes/MessageController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
 s328679161.494370
@@ -17418,8 +17420,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@67"Compile /Users/Nelson/Desktop/Proj/AGiftPaid/Classes/SendGiftInfo.m328679163#328679163#0(0"0(0#0#59"/Users/Nelson/Desktop/Proj/AGiftPaid/Classes/SendGiftInfo.m8776383040#1997"    cd /Users/Nelson/Desktop/Proj/AGiftPaid    setenv LANG en_US.US-ASCII    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-generated-files.hmap -I/Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-own-target-headers.hmap -I/Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-all-target-headers.hmap -iquote /Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-project-headers.hmap -F/Users/Nelson/Desktop/Proj/AGiftPaid/build/Debug-iphoneos -F/Users/Nelson/Desktop/Proj/AGiftPaid -I/Users/Nelson/Desktop/Proj/AGiftPaid/build/Debug-iphoneos/include -I/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/libxml2 -I/Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources/armv7 -I/Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources -include /var/folders/ka/ka1+sV0nEdGtKp9q-0ju4k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AGiftPaid_Prefix-enwxaqhteoqcjfespjawqglrrigu/AGiftPaid_Prefix.pch -c /Users/Nelson/Desktop/Proj/AGiftPaid/Classes/SendGiftInfo.m -o /Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/SendGiftInfo.o0#
 
 CCompileC build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/SendGiftSectionViewController.o /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/SendGiftSectionViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s332932352.495946
-e332932352.775986
+s332992928.815173
+e332992929.483726
 r1
 xCompileC
 xbuild/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/SendGiftSectionViewController.o
@@ -17428,7 +17430,7 @@ xnormal
 xarmv7
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@90"Compile /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/SendGiftSectionViewController.m332932352#332932352#0(0"0(0#0#82"/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/SendGiftSectionViewController.m8650631808#2103"    cd /Users/Nelson/Desktop/Proj/AGift/AGiftPaid    setenv LANG en_US.US-ASCII    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-generated-files.hmap -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-own-target-headers.hmap -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-all-target-headers.hmap -iquote /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-project-headers.hmap -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/include -I/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/libxml2 -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources/armv7 -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources -include /var/folders/ka/ka1+sV0nEdGtKp9q-0ju4k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AGiftPaid_Prefix-avwgmbdcvgmitihdipbtluodfypb/AGiftPaid_Prefix.pch -c /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/SendGiftSectionViewController.m -o /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/SendGiftSectionViewController.o0#
+lSLF07#2@90"Compile /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/SendGiftSectionViewController.m332992928#332992929#0(0"0(0#0#82"/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/SendGiftSectionViewController.m8672630528#2103"    cd /Users/Nelson/Desktop/Proj/AGift/AGiftPaid    setenv LANG en_US.US-ASCII    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-generated-files.hmap -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-own-target-headers.hmap -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-all-target-headers.hmap -iquote /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid-project-headers.hmap -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/include -I/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/libxml2 -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources/armv7 -I/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/DerivedSources -include /var/folders/ka/ka1+sV0nEdGtKp9q-0ju4k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AGiftPaid_Prefix-avwgmbdcvgmitihdipbtluodfypb/AGiftPaid_Prefix.pch -c /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Classes/SendGiftSectionViewController.m -o /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/SendGiftSectionViewController.o0#
 
 CCompileC build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/SendGiftSectionViewController.o /Users/Nelson/Desktop/Proj/AGiftPaid/Classes/SendGiftSectionViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
 s328679159.079436
@@ -20714,14 +20716,14 @@ xpay-allow.jpg
 lSLF07#2@18"Copy pay-allow.jpg332911928#332911928#0(0"0(0#0#56"/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/pay-allow.jpg8704465024#531"    cd /Users/Nelson/Desktop/Proj/AGift/AGiftPaid    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Volumes/Disk2/IphoneDeveloper/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/pay-allow.jpg /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app0#
 
 CCreateUniversalBinary /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app/AGiftPaid normal "armv6 armv7"
-s332936800.158759
-e332936800.255615
+s333016617.306287
+e333016617.403558
 r1
 xCreateUniversalBinary
 x/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app/AGiftPaid
 xnormal
 xarmv6 armv7
-lSLF07#2@87"CreateUniversalBinary build/Debug-iphoneos/AGiftPaid.app/AGiftPaid normal "armv6 armv7"332936800#332936800#0(0"0(0#0#54"/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/armv6 armv78639543040#590"    cd /Users/Nelson/Desktop/Proj/AGift/AGiftPaid    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/lipo -create /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/AGiftPaid /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/AGiftPaid -output /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app/AGiftPaid0#
+lSLF07#2@87"CreateUniversalBinary build/Debug-iphoneos/AGiftPaid.app/AGiftPaid normal "armv6 armv7"333016617#333016617#0(0"0(0#0#54"/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/armv6 armv78681370464#590"    cd /Users/Nelson/Desktop/Proj/AGift/AGiftPaid    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/lipo -create /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/AGiftPaid /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/AGiftPaid -output /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app/AGiftPaid0#
 
 CCreateUniversalBinary /Users/Nelson/Desktop/Proj/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app/AGiftPaid normal "armv6 armv7"
 s329100966.855827
@@ -20752,13 +20754,13 @@ x/Users/Nelson/Desktop/Proj/AGiftPaid/AGiftPaid.xcdatamodeld
 lSLF07#2@96"DataModelVersionCompile build/Debug-iphoneos/AGiftPaid.app/AGiftPaid.momd AGiftPaid.xcdatamodeld328671609#328671609#0(0"0(0#0#59"/Users/Nelson/Desktop/Proj/AGiftPaid/AGiftPaid.xcdatamodeld8760941216#403"    cd /Users/Nelson/Desktop/Proj/AGiftPaid    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Volumes/Disk2/IphoneDeveloper/usr/bin/momc /Users/Nelson/Desktop/Proj/AGiftPaid/AGiftPaid.xcdatamodeld /Users/Nelson/Desktop/Proj/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app/AGiftPaid.momd0#
 
 CGenerateDSYMFile /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app.dSYM /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app/AGiftPaid
-s332936800.255702
-e332936801.324606
+s333016617.403833
+e333016618.301643
 r1
 xGenerateDSYMFile
 x/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app.dSYM
 x/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app/AGiftPaid
-lSLF07#2@101"GenerateDSYMFile build/Debug-iphoneos/AGiftPaid.app.dSYM build/Debug-iphoneos/AGiftPaid.app/AGiftPaid332936800#332936801#0(0"0(0#0#87"/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app/AGiftPaid8637858144#440"    cd /Users/Nelson/Desktop/Proj/AGift/AGiftPaid    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Volumes/Disk2/IphoneDeveloper/usr/bin/dsymutil /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app/AGiftPaid -o /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app.dSYM0#
+lSLF07#2@101"GenerateDSYMFile build/Debug-iphoneos/AGiftPaid.app.dSYM build/Debug-iphoneos/AGiftPaid.app/AGiftPaid333016617#333016618#0(0"0(0#0#87"/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app/AGiftPaid8681307552#440"    cd /Users/Nelson/Desktop/Proj/AGift/AGiftPaid    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Volumes/Disk2/IphoneDeveloper/usr/bin/dsymutil /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app/AGiftPaid -o /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app.dSYM0#
 
 CGenerateDSYMFile /Users/Nelson/Desktop/Proj/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app.dSYM /Users/Nelson/Desktop/Proj/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app/AGiftPaid
 s329100967.592869
@@ -20770,24 +20772,24 @@ x/Users/Nelson/Desktop/Proj/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app/AGiftPa
 lSLF07#2@101"GenerateDSYMFile build/Debug-iphoneos/AGiftPaid.app.dSYM build/Debug-iphoneos/AGiftPaid.app/AGiftPaid329100967#329100968#0(0"0(0#0#81"/Users/Nelson/Desktop/Proj/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app/AGiftPaid8613309184#422"    cd /Users/Nelson/Desktop/Proj/AGiftPaid    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Volumes/Disk2/IphoneDeveloper/usr/bin/dsymutil /Users/Nelson/Desktop/Proj/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app/AGiftPaid -o /Users/Nelson/Desktop/Proj/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app.dSYM0#
 
 CLd /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/AGiftPaid normal armv6
-s332936799.815899
-e332936800.158658
+s333016616.864867
+e333016617.306187
 r1
 xLd
 x/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/AGiftPaid
 xnormal
 xarmv6
-lSLF07#2@131"Link /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/AGiftPaid332936799#332936800#0(0"0(0#0#0"8647301120#1232"    cd /Users/Nelson/Desktop/Proj/AGift/AGiftPaid    setenv IPHONEOS_DEPLOYMENT_TARGET 4.2    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv6 -isysroot /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -L/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid -filelist /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/AGiftPaid.LinkFileList -dead_strip -lxml2 -miphoneos-version-min=4.2 -framework AddressBook -framework Foundation -framework UIKit -framework CoreGraphics -framework CoreData -framework OpenGLES -framework QuartzCore -framework SystemConfiguration -framework AVFoundation -framework MediaPlayer -framework AddressBookUI -framework MessageUI -o /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/AGiftPaid0#
+lSLF07#2@131"Link /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/AGiftPaid333016616#333016617#0(0"0(0#0#0"8679741376#1232"    cd /Users/Nelson/Desktop/Proj/AGift/AGiftPaid    setenv IPHONEOS_DEPLOYMENT_TARGET 4.2    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv6 -isysroot /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -L/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid -filelist /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/AGiftPaid.LinkFileList -dead_strip -lxml2 -miphoneos-version-min=4.2 -framework AddressBook -framework Foundation -framework UIKit -framework CoreGraphics -framework CoreData -framework OpenGLES -framework QuartzCore -framework SystemConfiguration -framework AVFoundation -framework MediaPlayer -framework AddressBookUI -framework MessageUI -o /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/AGiftPaid0#
 
 CLd /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/AGiftPaid normal armv7
-s332936799.654328
-e332936800.158156
+s333016616.841953
+e333016617.305705
 r1
 xLd
 x/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/AGiftPaid
 xnormal
 xarmv7
-lSLF07#2@131"Link /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/AGiftPaid332936799#332936800#0(0"0(0#0#0"8644130048#1232"    cd /Users/Nelson/Desktop/Proj/AGift/AGiftPaid    setenv IPHONEOS_DEPLOYMENT_TARGET 4.2    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv7 -isysroot /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -L/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid -filelist /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/AGiftPaid.LinkFileList -dead_strip -lxml2 -miphoneos-version-min=4.2 -framework AddressBook -framework Foundation -framework UIKit -framework CoreGraphics -framework CoreData -framework OpenGLES -framework QuartzCore -framework SystemConfiguration -framework AVFoundation -framework MediaPlayer -framework AddressBookUI -framework MessageUI -o /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/AGiftPaid0#
+lSLF07#2@131"Link /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/AGiftPaid333016616#333016617#0(0"0(0#0#0"8675703616#1232"    cd /Users/Nelson/Desktop/Proj/AGift/AGiftPaid    setenv IPHONEOS_DEPLOYMENT_TARGET 4.2    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv7 -isysroot /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -L/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos -F/Users/Nelson/Desktop/Proj/AGift/AGiftPaid -filelist /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/AGiftPaid.LinkFileList -dead_strip -lxml2 -miphoneos-version-min=4.2 -framework AddressBook -framework Foundation -framework UIKit -framework CoreGraphics -framework CoreData -framework OpenGLES -framework QuartzCore -framework SystemConfiguration -framework AVFoundation -framework MediaPlayer -framework AddressBookUI -framework MessageUI -o /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/AGiftPaid0#
 
 CLd /Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/AGiftPaid normal armv6
 s329100964.432711
@@ -20984,12 +20986,12 @@ x/Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGift
 lSLF07#2@201"ProcessProductPackaging /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid.xcent326078112#326078112#0(0"0(0#0#105"/Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid.xcent8634790912#494"    cd /Users/Nelson/Desktop/Proj/AGiftPaid    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist -entitlements -format xml -o /Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid.xcent0#
 
 CTouch /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app
-s332936801.324957
-e332936801.355681
+s333016618.301861
+e333016618.314745
 r1
 xTouch
 x/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app
-lSLF07#2@83"Touch /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app332936801#332936801#0(0"0(0#0#0"8656182720#314"    cd /Users/Nelson/Desktop/Proj/AGift/AGiftPaid    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app0#
+lSLF07#2@83"Touch /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app333016618#333016618#0(0"0(0#0#0"8679989216#314"    cd /Users/Nelson/Desktop/Proj/AGift/AGiftPaid    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app0#
 
 CTouch /Users/Nelson/Desktop/Proj/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app
 s329100968.366242

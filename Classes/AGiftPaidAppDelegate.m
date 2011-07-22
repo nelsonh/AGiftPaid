@@ -591,7 +591,16 @@ NSString *const VerifyCode=@"VerifyPassword";
         ABMultiValueRef pNumberRef;
         
         pNumberRef=ABRecordCopyValue(personRec, kABPersonPhoneProperty);
-        pNumber=(NSString*)ABMultiValueCopyValueAtIndex(pNumberRef, 0);
+		
+		if(ABMultiValueGetCount(pNumberRef)>0)
+		{
+			pNumber=(NSString*)ABMultiValueCopyValueAtIndex(pNumberRef, 0);
+		}
+		else
+		{
+			pNumber=@"";
+		}
+		
         
         
         pNumber=[pNumber stringByReplacingOccurrencesOfString:@"-" withString:@""];
@@ -623,7 +632,7 @@ NSString *const VerifyCode=@"VerifyPassword";
 
 -(void)importContactList
 {
-    NSString *msg=@"Gift-you would like to use addressbook";
+    NSString *msg=@"Allow this application to access your address book";
     //ask user to import contact list
     UIAlertView *importAlert=[[UIAlertView alloc] initWithTitle:@"Alert" message:msg delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"Yes", nil];
     [importAlert show];

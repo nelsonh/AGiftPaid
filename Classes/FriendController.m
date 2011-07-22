@@ -365,7 +365,15 @@
     NSString *lastName;
 	
 	pNumberRef=ABRecordCopyValue(person, kABPersonPhoneProperty);
-	pNumber=(NSString*)ABMultiValueCopyValueAtIndex(pNumberRef, 0);
+	
+	if(ABMultiValueGetCount(pNumberRef)>0)
+	{
+		pNumber=(NSString*)ABMultiValueCopyValueAtIndex(pNumberRef, 0);
+	}
+	else
+	{
+		pNumber=@"";
+	}
     
     firstName=(NSString*)ABRecordCopyValue(person, kABPersonFirstNameProperty);
     middleName=(NSString*)ABRecordCopyValue(person, kABPersonMiddleNameProperty);
@@ -430,6 +438,15 @@
 	}
 	else if(buttonIndex==1)
 	{
+		
+		if([self.invitedPhoneNumber isEqualToString:@""])
+		{
+			UIAlertView *smsAlert=[[UIAlertView alloc] initWithTitle:@"Error" message:@"We can not send SMS invitation, since this person doesn't have phone number" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+			[smsAlert show];
+			[smsAlert release];
+			
+			return;
+		}
 		
 		if([MFMessageComposeViewController canSendText] && self.invitedPhoneNumber)
 		{

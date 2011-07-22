@@ -2343,8 +2343,8 @@
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = "-lxml2";
 				PREBINDING = NO;
-				PROVISIONING_PROFILE = "4A8032FE-8C1D-4999-80A3-A8753A1409FD";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4A8032FE-8C1D-4999-80A3-A8753A1409FD";
+				PROVISIONING_PROFILE = "9078BCD3-2FE8-4054-A6C6-A52D6A1B8A20";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "9078BCD3-2FE8-4054-A6C6-A52D6A1B8A20";
 				SDKROOT = iphoneos;
 			};
 			name = Distribution;
@@ -2353,7 +2353,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_ENTITLEMENTS = "~/Desktop/Proj/AGiftPaid/Entitlements.plist";
+				CODE_SIGN_ENTITLEMENTS = "~/Desktop/Proj/AGift/AGiftPaid/Entitlements.plist";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2371,16 +2371,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Nelson Hung (C466W8TM8M)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nelson Hung (C466W8TM8M)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: ASquare LLC";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: ASquare LLC";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				OTHER_LDFLAGS = "-lxml2";
 				PREBINDING = NO;
-				PROVISIONING_PROFILE = "069C7BE5-2CCD-46FA-9E39-1B4934D46089";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "069C7BE5-2CCD-46FA-9E39-1B4934D46089";
+				PROVISIONING_PROFILE = "9078BCD3-2FE8-4054-A6C6-A52D6A1B8A20";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "9078BCD3-2FE8-4054-A6C6-A52D6A1B8A20";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;

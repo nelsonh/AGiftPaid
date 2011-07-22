@@ -8,6 +8,10 @@
 		<data>
 		vhLGtq/eTErNuBR5OFfxKO/aBqc=
 		</data>
+		<key>1.png</key>
+		<data>
+		dLKnkqEYlZKcka/y7RDRyX212E8=
+		</data>
 		<key>10-Happy.mp3</key>
 		<data>
 		vrfSH4Dbpq5vIOrD3sHxCzbl0P8=
@@ -200,6 +204,10 @@
 		<data>
 		/iE2z6j3IhLbRhq9qSRoqXE0j3E=
 		</data>
+		<key>BoxNavi.png</key>
+		<data>
+		Z9MFBRdeQatBpFlaEM3PMMSFJZs=
+		</data>
 		<key>Brown_background.png</key>
 		<data>
 		52/8j3BJVOVw5dIELePMwrKvK48=
@@ -238,7 +246,7 @@
 		</data>
 		<key>FriendController.nib</key>
 		<data>
-		LnBzX9Zo7trkErURiZmUfDpfvqc=
+		/sGyBYdb+9RJbBpXJBM3JbAnHTE=
 		</data>
 		<key>GiftBla.png</key>
 		<data>
@@ -246,27 +254,27 @@
 		</data>
 		<key>GiftBoxCell.nib</key>
 		<data>
-		XYxI3M1T/HXe9/5iZmLgc1fAhKo=
+		BN1xap+qyYQ+MNPnni4ayL6iGVw=
 		</data>
 		<key>GiftBoxSelectionController.nib</key>
 		<data>
-		Us8AfWpDvMpNC4lKlirBCJjHQ2w=
+		TB/fWoOEF6WL18ZO/l+M7tLtv5w=
 		</data>
 		<key>GiftCell.nib</key>
 		<data>
-		XPGqIuFyNv/XSycBvC0/oCyZhm4=
+		CD4r5C3ms/975J++zGUTu0e7tfk=
 		</data>
 		<key>GiftHistorySection.nib</key>
 		<data>
-		nTgVCSTxCydjQ1e6oHkuCLHkCto=
+		NQ+IAkb6jP0kqnZaXAHEwOX9SVQ=
 		</data>
 		<key>GiftSelectionController.nib</key>
 		<data>
-		32HqVzhFDqoGhtSM9f8vQ2b6aHA=
+		zPLkXnvCwe1AbQKOrlALE8WF7fE=
 		</data>
 		<key>GiftTimeSelectionController.nib</key>
 		<data>
-		21Fq1Ke1ZQXuAulPaV2arLfPKqk=
+		dVlmPJQqfxmiLRALiKtKy5vXqao=
 		</data>
 		<key>HandPan.png</key>
 		<data>
@@ -282,11 +290,11 @@
 		</data>
 		<key>HistoryDetailController.nib</key>
 		<data>
-		eluSAVbsoUYPY8+47CJTxNizCwQ=
+		IeF1LTj0uTpLM2CCpKvY74WXZnU=
 		</data>
 		<key>HistoryTableCell.nib</key>
 		<data>
-		av2cIq8LW2OsTaI8+I8QgNUfkdA=
+		S5hG72+Nwf2eSVOqnESBMDDuy4M=
 		</data>
 		<key>Letter1.png</key>
 		<data>
@@ -306,7 +314,7 @@
 		</data>
 		<key>MainWindow.nib</key>
 		<data>
-		3qUiLnXjTIJZLrbjxXOuBjOV55g=
+		eaWQtVsQHEbWE15A460hW3rlKKU=
 		</data>
 		<key>Mes_background.png</key>
 		<data>
@@ -322,19 +330,19 @@
 		</data>
 		<key>MessageCell.nib</key>
 		<data>
-		3vnmGOv7sMiBxY9BjC0d5E85FBo=
+		wHwhTOVfbnhdW2klHKDuSnuh3Ws=
 		</data>
 		<key>MessageController.nib</key>
 		<data>
-		smoQzw3qWyGKIEzmYAH/d7ZZdqg=
+		0rqaeLil3tKqxvvwbecCPmZ9FrY=
 		</data>
 		<key>MessageDetailController.nib</key>
 		<data>
-		2Np6kw5P37PJ5Gdcc9/qyj1Xg7c=
+		hOihnrAogpkp6Ee9r2CR0d86nhw=
 		</data>
 		<key>MessageEditViewController.nib</key>
 		<data>
-		oO/Oclj6r52ICemh4TrVPoEx1xo=
+		b2S9yfMf/JQOllQ1ICJEyWsqNQs=
 		</data>
 		<key>Music.png</key>
 		<data>
@@ -354,11 +362,11 @@
 		</data>
 		<key>MusicCell.nib</key>
 		<data>
-		liPDuyzdr5QbdvnXPjKBycQ8eq0=
+		yr0yfKxDpA9FxxUnBq3IPLwVlOU=
 		</data>
 		<key>MusicSelectionController.nib</key>
 		<data>
-		GM8kUw6Y87EOs4Vi17hPPy+APV4=
+		pqB7zfaCs4YtaQ/0J+oekmFE9OE=
 		</data>
 		<key>NOpen.png</key>
 		<data>
@@ -378,35 +386,39 @@
 		</data>
 		<key>OpenTimeCell.nib</key>
 		<data>
-		IAxdt8OG9c4RA3oj1Y7nWIKDdPc=
+		6y3fJMWCHvrsg5e59HKi4g13yp4=
 		</data>
 		<key>P1.png</key>
 		<data>
-		mJBwM047HM2AOgRJygtOxMs3p6I=
+		bCn1GzoX/Xh3XLSVnUDzrNYIf7Q=
 		</data>
 		<key>P2.png</key>
 		<data>
-		lngpqAWuzQiZCC8IpNw+c7K4zZs=
+		oKsyw2D/vQA0eekrO28utNG3WKQ=
 		</data>
 		<key>P3.png</key>
 		<data>
-		o8MdV8Yht9h0z3KYLMnysy2DGps=
+		sMcFzca+wDJbJQXBCK1gstOofJg=
 		</data>
 		<key>P4.png</key>
 		<data>
-		9hD7XXrhmZujfJ7FJPPQe2XWhFQ=
+		HP7a/M1s6EauhPaKkxkwz0eJa2g=
 		</data>
 		<key>P5.png</key>
 		<data>
-		Dr/c7N9AbOJDovQMvaj/PXVQmzg=
+		1hMpL1XAzOzEK7q0lim12pQLFbM=
 		</data>
 		<key>P6.png</key>
 		<data>
-		iWHZ6ItRGdu8+lTrd5bJUpNVBdk=
+		in/6hAMAqjD635Kg2Tzw+SDY8r8=
 		</data>
 		<key>P7.png</key>
 		<data>
-		D0CGAvlaVnpVNbsJN7yF4ORpYqA=
+		e2QdWqkSkWPLG20S6+2eSGGa9f4=
+		</data>
+		<key>P8.png</key>
+		<data>
+		ttjz79iMlhA+EZSBK5SioXpWoFg=
 		</data>
 		<key>PAY.png</key>
 		<data>
@@ -426,11 +438,11 @@
 		</data>
 		<key>PhotoCell.nib</key>
 		<data>
-		YX43LWH6C+G5BHtoJXF2JJPzgMQ=
+		hOOKvn+23jJuitvOIuGOi7R9pH4=
 		</data>
 		<key>PhotoSelectionController.nib</key>
 		<data>
-		uMt7twc2vZUQOQerL+0zcf6jGVo=
+		X7NzQavqVkUxbuGkF038VnolKbg=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -462,15 +474,23 @@
 		</data>
 		<key>RegisterViewController.nib</key>
 		<data>
-		KVpNQRQJm/Y4RrBhJPCI9v+Vqjo=
+		xdbRkS2C1jT+qiYCIHCU68MeWTU=
 		</data>
 		<key>Send.png</key>
 		<data>
 		phdWmBPXW2AyWwsN51d0QUMSq5Q=
 		</data>
+		<key>SendGift.nib</key>
+		<data>
+		ERluVy7yh1ptsbgE0QRZDlTif+o=
+		</data>
 		<key>SendGiftSectionViewController.nib</key>
 		<data>
-		JTThdg6kRQKDku1Se06LG72nXuE=
+		UNzKrkVheZZChPwB+1PxrAvy32E=
+		</data>
+		<key>SendNavi.png</key>
+		<data>
+		BiWieq9aHEE+XqMN8Rv8xeEHJFY=
 		</data>
 		<key>SendRec.png</key>
 		<data>
@@ -494,7 +514,7 @@
 		</data>
 		<key>StateCell.nib</key>
 		<data>
-		N0O+j0hQTjrEj03/M8YTwdutImc=
+		E6/XIjsjWxWZyRW5oG28iMsEuh8=
 		</data>
 		<key>Stop.png</key>
 		<data>
@@ -518,7 +538,7 @@
 		</data>
 		<key>UserPhotoSettingViewController.nib</key>
 		<data>
-		+h7Et2NmY+MH85IvHBxsPRQT15g=
+		ITO9trfQsHFj3Tye7wvh31NCO7o=
 		</data>
 		<key>VerifyData.plist</key>
 		<data>
@@ -526,11 +546,11 @@
 		</data>
 		<key>Viewer3DBoxController.nib</key>
 		<data>
-		w7s5dd44Wp77Hv+nGdrNiOYR7dQ=
+		iMEPo47+z6AicoDdrk1ljB5cgdk=
 		</data>
 		<key>Viewer3DGiftController.nib</key>
 		<data>
-		l3WGTxS+q1H7RwBSH2LmzHIzLmM=
+		6Ad/dOjdsRN6EovWMVbrIWjNThs=
 		</data>
 		<key>XX.png</key>
 		<data>
@@ -558,7 +578,7 @@
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		rvgVBBK4NFhSRQUkeIF5yQyTHGw=
+		sbWjyVHxjMRgMp11Uoi1eVWIYiA=
 		</data>
 		<key>gift.png</key>
 		<data>
@@ -592,9 +612,17 @@
 		<data>
 		wpYJkvyGVovzK2LCbUalu/3DvrM=
 		</data>
+		<key>iSend.png</key>
+		<data>
+		rMpGCQigyE82vt+B9AJV4W/y9Q8=
+		</data>
 		<key>iTime.png</key>
 		<data>
 		GVItjqh7q+2O+koyEFDjtirQjSE=
+		</data>
+		<key>oo.png</key>
+		<data>
+		/XD618++sX0/cfcqF3hlxCzhiwc=
 		</data>
 		<key>open.png</key>
 		<data>
