@@ -2371,16 +2371,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: ASquare LLC";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: ASquare LLC";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Nelson Hung (C466W8TM8M)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nelson Hung (C466W8TM8M)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				OTHER_LDFLAGS = "-lxml2";
 				PREBINDING = NO;
-				PROVISIONING_PROFILE = "9078BCD3-2FE8-4054-A6C6-A52D6A1B8A20";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "9078BCD3-2FE8-4054-A6C6-A52D6A1B8A20";
+				PROVISIONING_PROFILE = "DCEBB220-C11C-4A40-97BE-18E780F2DC77";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "DCEBB220-C11C-4A40-97BE-18E780F2DC77";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
