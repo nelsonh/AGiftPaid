@@ -458,7 +458,7 @@
 		NSString *mailto=[NSString stringWithFormat:@"%@", self.inviteEmail];
 		NSString *subject=@"Gift-me invitation";
 		NSString *body=[NSString stringWithFormat:@"Hi %@, \n\n", self.invitedName];
-		body=[body stringByAppendingString:@"Join me and go download the Gift-me app on your phone and start receiving virtual gifts from me and your friends.\n\nHere’s the link to download: \n\nhttp://itunes.apple.com/us/app/gift-me/id444696955?mt=8\n\nhttp://social.zune.net/redirect?type=phoneApp&id=c4ac3806-f097-e011-986b-78e7d1fa76f8"];
+		body=[body stringByAppendingString:@"Join me and go download the Gift-me app on your phone and start receiving virtual gifts from me and your friends.\n\nHere’s the link to download: \n\nFor iPhone:\nhttp://itunes.apple.com/us/app/gift-me/id444696955?mt=8\n\nFor Windows Phone:\nhttp://social.zune.net/redirect?type=phoneApp&id=c4ac3806-f097-e011-986b-78e7d1fa76f8"];
 		NSString *urlString=[NSString stringWithFormat:@"mailto:%@?subject=%@&body=%@", mailto, subject, body];
 
 		NSURL *url=[NSURL URLWithString:[urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
@@ -484,7 +484,7 @@
             
             NSMutableString *msg=[[[NSMutableString alloc] init] autorelease];
             [msg appendString:[NSString stringWithFormat:@"Hi %@, \n\n", self.invitedName]];
-			[msg appendString:[NSString stringWithFormat:@"Join me and go download the Gift-me app on your phone and start receiving virtual gifts from me and your friends.\n\nHere’s the link to download: \n\n%@\n\n%@", @"http://itunes.apple.com/us/app/gift-me/id444696955?mt=8", @"http://social.zune.net/redirect?type=phoneApp&id=c4ac3806-f097-e011-986b-78e7d1fa76f8"]];
+			[msg appendString:[NSString stringWithFormat:@"Join me and go download the Gift-me app on your phone and start receiving virtual gifts from me and your friends.\n\nHere’s the link to download: \n\nFor iPhone:\n%@\n\nFor Windows Phone:\n%@", @"http://itunes.apple.com/us/app/gift-me/id444696955?mt=8", @"http://social.zune.net/redirect?type=phoneApp&id=c4ac3806-f097-e011-986b-78e7d1fa76f8"]];
 
 			
 			smsController.body = msg;
