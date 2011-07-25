@@ -36,6 +36,7 @@
 @synthesize invitedPhoneNumber;
 @synthesize shouldUpdateFriend;
 @synthesize invitedName;
+@synthesize inviteEmail;
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 /*
@@ -153,8 +154,8 @@
 	
 	if([friendIDTextField.text isEqualToString:@""] || [areaCodeTextField.text isEqualToString:@""])
 	{
-		NSString *msg=@"Friend ID can not be blank";
-		UIAlertView *blankAlert=[[UIAlertView alloc] initWithTitle:@"Blank" message:msg delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+		NSString *msg=@"Your friend list is up to date from address book. Enter phone number to manually add a friend.";
+		UIAlertView *blankAlert=[[UIAlertView alloc] initWithTitle:@"Alert" message:msg delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
 		[blankAlert show];
 		[blankAlert release];
 	}
@@ -363,6 +364,7 @@
     NSString *firstName;
     NSString *middleName;
     NSString *lastName;
+	ABMultiValueRef emailRef;
 	
 	pNumberRef=ABRecordCopyValue(person, kABPersonPhoneProperty);
 	
@@ -395,7 +397,17 @@
     }
     
     self.invitedName=pName;
-    
+	
+	emailRef=ABRecordCopyValue(person, kABPersonEmailProperty);
+	
+	if(ABMultiValueGetCount(emailRef)>0)
+	{
+		self.inviteEmail=(NSString*)ABMultiValueCopyValueAtIndex(emailRef, 0);
+	}
+	else
+	{
+		self.inviteEmail=@"";
+	}
 	
 	if(pNumber)
 	{
@@ -433,7 +445,23 @@
 	
 	if(buttonIndex==0)
 	{
-		NSURL *url=[NSURL URLWithString:@"mailto:test@gmail.com"];
+		if([self.inviteEmail isEqualToString:@""])
+		{
+			UIAlertView *smsAlert=[[UIAlertView alloc] initWithTitle:@"Error" message:@"We can not send E-mail invitation, since this person doesn't have E-mail" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+			[smsAlert show];
+			[smsAlert release];
+			
+			return;
+		}
+		
+		
+		NSString *mailto=[NSString stringWithFormat:@"%@", self.inviteEmail];
+		NSString *subject=@"Join me and go download the Gift-me";
+		NSString *body=[NSString stringWithFormat:@"Hi %@, \n", self.invitedName];
+		body=[body stringByAppendingString:@"Join me and go download the Gift-me app on your phone and start receiving virtual gifts from me and your friends.\n\nHere’s the link to download: \n\nhttp://itunes.apple.com/us/app/gift-me/id444696955?mt=8\n\nhttp://social.zune.net/redirect?type=phoneApp&id=c4ac3806-f097-e011-986b-78e7d1fa76f8"];
+		NSString *urlString=[NSString stringWithFormat:@"mailto:%@?subject=%@&body=%@", mailto, subject, body];
+
+		NSURL *url=[NSURL URLWithString:[urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
 		[[UIApplication sharedApplication] openURL:url];
 	}
 	else if(buttonIndex==1)
@@ -456,7 +484,8 @@
             
             NSMutableString *msg=[[[NSMutableString alloc] init] autorelease];
             [msg appendString:[NSString stringWithFormat:@"Hi %@, \n", self.invitedName]];
-            [msg appendString:[NSString stringWithFormat:@"Join me and go download the Gift-me app on your phone and start receiving virtual gifts from me and your friends.  Here’s the link to download: %@", @"http://itunes.apple.com/us/app/gift-me/id444696955?mt=8"]];
+			[msg appendString:[NSString stringWithFormat:@"Join me and go download the Gift-me app on your phone and start receiving virtual gifts from me and your friends.\n\nHere’s the link to download: \n\n%@\n\n%@", @"http://itunes.apple.com/us/app/gift-me/id444696955?mt=8", @"http://social.zune.net/redirect?type=phoneApp&id=c4ac3806-f097-e011-986b-78e7d1fa76f8"]];
+
 			
 			smsController.body = msg;
 			smsController.recipients = [NSArray arrayWithObjects:self.invitedPhoneNumber, nil];
@@ -958,6 +987,7 @@
 	[deleteFriendAlert release];
 	self.invitedPhoneNumber=nil;
     self.invitedName=nil;
+	self.inviteEmail=nil;
 	
     [super dealloc];
 }

@@ -35,6 +35,7 @@
 	UIActionSheet *updatingView;
 	NSString *invitedPhoneNumber;
     NSString *invitedName;
+	NSString *inviteEmail;
 	
 	NSMutableArray *scrollViewSourceData;
 	
@@ -65,6 +66,7 @@
 @property (nonatomic, retain) UIActionSheet *updatingView;
 @property (nonatomic, retain) NSString *invitedPhoneNumber;
 @property (nonatomic, retain) NSString *invitedName;
+@property (nonatomic, retain) NSString *inviteEmail;
 @property (nonatomic, assign) BOOL shouldUpdateFriend;
 
 
