@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A1E645613DE705000BD24EC /* TableField.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A1E645513DE705000BD24EC /* TableField.png */; };
+		1A1E645813DEB39F00BD24EC /* TableBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A1E645713DEB39F00BD24EC /* TableBackground.png */; };
 		1D3623260D0F684500981E51 /* AGiftPaidAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AGiftPaidAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -287,6 +289,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A1E645513DE705000BD24EC /* TableField.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TableField.png; sourceTree = "<group>"; };
+		1A1E645713DEB39F00BD24EC /* TableBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TableBackground.png; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* AGiftPaidAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGiftPaidAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AGiftPaidAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGiftPaidAppDelegate.m; sourceTree = "<group>"; };
@@ -735,6 +739,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		1A1E645313DE6FFF00BD24EC /* New add */ = {
+			isa = PBXGroup;
+			children = (
+				1A1E645713DEB39F00BD24EC /* TableBackground.png */,
+				1A1E645513DE705000BD24EC /* TableField.png */,
+			);
+			name = "New add";
+			sourceTree = "<group>";
+		};
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
@@ -761,6 +774,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1A1E645313DE6FFF00BD24EC /* New add */,
 				523B316913D6CC42006060E5 /* SendGift */,
 				520A93E1136A6F2500C6C618 /* PushNotifycation.wav */,
 				52D08A7A138B3B0E0052B784 /* Hint */,
@@ -2165,6 +2179,8 @@
 				523B317313D6CC43006060E5 /* 1.png in Resources */,
 				523B331913D7D033006060E5 /* GiftHistorySection.xib in Resources */,
 				523B333613D7D508006060E5 /* RegisterViewController.xib in Resources */,
+				1A1E645613DE705000BD24EC /* TableField.png in Resources */,
+				1A1E645813DEB39F00BD24EC /* TableBackground.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
