@@ -1,7 +1,7 @@
 TAGiftPaid
 v7
 r0
-t333513972.788471
+t333535138.076091
 cCheck dependencies
 cCpResource build/Debug-iphoneos/AGiftPaid.app/ResourceRules.plist /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
 cProcessInfoPlistFile /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app/Info.plist AGiftPaid-Info.plist
@@ -2625,9 +2625,9 @@ t1311647756
 s1024
 
 N/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/RegisterViewController.xib
-c000000004E2F9C99000000000001D76A
-t1311743129
-s120682
+c000000004E311F37000000000001D834
+t1311842103
+s120884
 
 N/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/Send.png
 c000000004E2E280C0000000000001A79
@@ -3631,7 +3631,7 @@ t1311739513
 s6520
 
 N/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app
-t1311821172
+t1311842331
 s5780
 
 N/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app.dSYM
@@ -4115,8 +4115,8 @@ t1311647758
 s1274
 
 N/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app/RegisterViewController.nib
-t1311821157
-s10551
+t1311842134
+s10558
 
 N/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app/ResourceRules.plist
 t1311647758
@@ -12493,16 +12493,16 @@ lSLF07#2@51"Analyze /Users/Nelson/Desktop/Proj/AGiftPaid/main.m328592008#3285920
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies333513925#333513933#0(0"0(0#1#0"7742373267996762112#0"0#
+lSLF07#2@18"Check dependencies333535137#333535137#0(0"0(0#1#0"8619935104#0"0#
 
 CCodeSign /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app
-s333513959.736550
-e333513972.788332
+s333535137.638550
+e333535138.076045
 r1
 xCodeSign
 x/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app
 o/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app: replacing existing signature
-lSLF07#2@43"CodeSign build/Debug-iphoneos/AGiftPaid.app333513959#333513972#0(108"/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app: replacing existing signature0(0#0#77"/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app8611563168#733"    cd /Users/Nelson/Desktop/Proj/AGift/AGiftPaid    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: Nelson Hung (C466W8TM8M)" --resource-rules=/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app/ResourceRules.plist --entitlements /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid.xcent /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app0#
+lSLF07#2@43"CodeSign build/Debug-iphoneos/AGiftPaid.app333535137#333535138#0(108"/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app: replacing existing signature0(0#0#77"/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app8622735904#733"    cd /Users/Nelson/Desktop/Proj/AGift/AGiftPaid    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: Nelson Hung (C466W8TM8M)" --resource-rules=/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app/ResourceRules.plist --entitlements /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid.xcent /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app0#
 
 CCodeSign /Users/Nelson/Desktop/Proj/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app
 s329100968.487206
@@ -18308,12 +18308,12 @@ x/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/PhotoCell.xib
 lSLF07#2@24"CompileXIB PhotoCell.xib332911926#332911927#0(0"0(0#0#56"/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/PhotoCell.xib8716208128#634"    cd /Users/Nelson/Desktop/Proj/AGift/AGiftPaid    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Volumes/Disk2/IphoneDeveloper/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app/PhotoCell.nib /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/PhotoCell.xib --sdk /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk0#
 
 CCompileXIB /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/RegisterViewController.xib
-s333513933.278064
-e333513959.313615
+s333534932.693030
+e333534935.203140
 r1
 xCompileXIB
 x/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/RegisterViewController.xib
-lSLF07#2@37"CompileXIB RegisterViewController.xib333513933#333513959#0(0"0(0#0#69"/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/RegisterViewController.xib31244220638101620#660"    cd /Users/Nelson/Desktop/Proj/AGift/AGiftPaid    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Volumes/Disk2/IphoneDeveloper/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app/RegisterViewController.nib /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/RegisterViewController.xib --sdk /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk0#
+lSLF07#2@37"CompileXIB RegisterViewController.xib333534932#333534935#0(0"0(0#0#69"/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/RegisterViewController.xib8617082976#660"    cd /Users/Nelson/Desktop/Proj/AGift/AGiftPaid    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Volumes/Disk2/IphoneDeveloper/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app/RegisterViewController.nib /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/RegisterViewController.xib --sdk /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk0#
 
 CCompileXIB /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/SendGift.xib
 s332911928.951522
@@ -21024,12 +21024,12 @@ x/Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGift
 lSLF07#2@201"ProcessProductPackaging /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid.xcent326078112#326078112#0(0"0(0#0#105"/Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid.xcent8634790912#494"    cd /Users/Nelson/Desktop/Proj/AGiftPaid    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist -entitlements -format xml -o /Users/Nelson/Desktop/Proj/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid.xcent0#
 
 CTouch /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app
-s333513959.560183
-e333513959.736305
+s333534935.330101
+e333534935.410819
 r1
 xTouch
 x/Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app
-lSLF07#2@83"Touch /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app333513959#333513959#0(0"0(0#0#0"8614152160#314"    cd /Users/Nelson/Desktop/Proj/AGift/AGiftPaid    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app0#
+lSLF07#2@83"Touch /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app333534935#333534935#0(0"0(0#0#0"8610114208#314"    cd /Users/Nelson/Desktop/Proj/AGift/AGiftPaid    setenv PATH "/Volumes/Disk2/IphoneDeveloper/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Disk2/IphoneDeveloper/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app0#
 
 CTouch /Users/Nelson/Desktop/Proj/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app
 s329100968.366242

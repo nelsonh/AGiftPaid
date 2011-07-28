@@ -1,5 +1,3 @@
-7bcd2bb17c60e1842f3967f228c85776 285025bf39f505020695547997fdbfc9 ffffffffffffffffffffffffffffffff 5780 /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app
-000000004e2f9c99000000000001d76a c3997c0087c286e089a58e6d720335d9 ffffffffffffffffffffffffffffffff 10551 /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app/RegisterViewController.nib
 e06aaaa70fda50863db963bbe8d60ae1 91918d9b96e2b1c227c5b4c2983c52d9 ffffffffffffffffffffffffffffffff 83276 /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/SendGift.o
 7dd87ad258539a10e185533ec924e37c 128fde4323a551ae1907a2bce9d9b95a ffffffffffffffffffffffffffffffff 83620 /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv6/SendGift.o
 e06aaaa741f4792b3db963bbe8d6d128 afc97d1d71ff5508c99a07218e133f37 ffffffffffffffffffffffffffffffff 16808 /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/CXMLNode_XPathExtensions.o
@@ -217,6 +215,7 @@ e06aaaa70d3562e63db963bbe8d63174 8669d8daca74d70cf34d9d197fee4a88 ffffffffffffff
 000000004dcb4d160000000000000088 317662179d4c54f34b9ec7c3a31873c7 ffffffffffffffffffffffffffffffff 136 /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app/AGiftPaid.momd
 ad31efbc1317f12c1480442c659f458f a0ea4e4788fbfc0f68e8530ba3b368f1 ffffffffffffffffffffffffffffffff 452 /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/AGiftPaid.xcent
 00000000000000000000000000000000 5e760ce655b1989bfa325ba2967c57d9 ffffffffffffffffffffffffffffffff 102 /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app.dSYM
+7bcd2bb17c7e622a2f3967f228c85828 285025bf39f505020695547997fdbfc9 ffffffffffffffffffffffffffffffff 5780 /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app
 00000000000000000000000000000000 ada4a59b6c29cc460724ffe8f80f2d86 ffffffffffffffffffffffffffffffff 13561 /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app/embedded.mobileprovision
 2812f0523747917326ec47084f926980 0bebfdaed5693e4a98650c4321fba819 ffffffffffffffffffffffffffffffff 2062384 /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app/AGiftPaid
 f34314d1b940ee7eff2d28125494ee29 d1414309d594c79e4edb5de0bf26988a ffffffffffffffffffffffffffffffff 998968 /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/AGiftPaid.build/Debug-iphoneos/AGiftPaid.build/Objects-normal/armv7/AGiftPaid
@@ -225,6 +224,7 @@ f34314d1b940ee7eff2d28125494ee29 d1414309d594c79e4edb5de0bf26988a ffffffffffffff
 000000004e5cc9c30000000000000117 7dd87ad2160f535ae185533ec924d200 ffffffffffffffffffffffffffffffff 10545556 /var/folders/ka/ka1+sV0nEdGtKp9q-0ju4k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AGiftPaid_Prefix-bajlgkwbcdtussasrftoppvccjyx/AGiftPaid_Prefix.pch.gch
 00000000000000000000000000000000 5598f6c4832d0813340f6183f7c5b2c9 ffffffffffffffffffffffffffffffff 1901 /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app/TableBackground.png
 00000000000000000000000000000000 abfcfccf9e86284b69f5abdbac7e5572 ffffffffffffffffffffffffffffffff 605 /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app/TableField.png
+000000004e311f37000000000001d834 c3997c0087c286e089a58e6d720335d9 ffffffffffffffffffffffffffffffff 10558 /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app/RegisterViewController.nib
 000000004e24f147000000000000fa9f 2c58599e981b6a41b7941a653bdd750d ffffffffffffffffffffffffffffffff 6321 /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app/GiftHistorySection.nib
 00000000000000000000000000000000 d5c8570d68473598dbaac4a62761a3bf ffffffffffffffffffffffffffffffff 8631 /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app/1.png
 00000000000000000000000000000000 b13fb52b3e5833e348e80dc998872464 ffffffffffffffffffffffffffffffff 100312 /Users/Nelson/Desktop/Proj/AGift/AGiftPaid/build/Debug-iphoneos/AGiftPaid.app/oo.png
